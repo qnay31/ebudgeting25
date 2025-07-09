@@ -1246,7 +1246,7 @@ $(document).ready(function () {
 
                                     <div class="form-floating mb-2">
                                         <select class="form-select" name="bank" id="input-edit-bank" aria-label="Default select example">
-                                            <option selected value="${data["verBank"]}">- ${data["verBank"]} -</option>
+                                            <option selected value="${data["verBank"]}">${data["verBank"]}</option>
                                             <option value="BRI">Bank BRI</option>
                                             <option value="BNI">Bank BNI</option>
                                             <option value="Cimb">Bank Cimb</option>
