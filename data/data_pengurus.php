@@ -46,7 +46,7 @@ while ($data_Ains = $Ains->fetch_assoc()) { ?>
         </div>
         <div class="app-card-body p-3 has-card-actions">
 
-            <h4 class="app-doc-title truncate mb-0 personName"><a><?= $i++; ?>. <?= $data_Ains["nama"]; ?>
+            <h4 class="app-doc-title truncate mb-0 personName"><a><?= $i++; ?>. <?= ucwords($data_Ains["nama"]); ?>
                     (<?= $data_Ains["posisi"]; ?>)</a></h4>
             <div class="app-doc-meta">
                 <ul class="list-unstyled mb-0">
