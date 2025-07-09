@@ -16,7 +16,7 @@ if($num === 1 ) {
 } else {
     echo "0";
 
-    $sql = "INSERT INTO asal sekolah (nama_sekolah) VALUES (
+    $sql = "INSERT INTO asal_sekolah (nama_sekolah) VALUES (
         '$sekolah'
     )";
     $hasil = mysqli_query($conn,$sql);
