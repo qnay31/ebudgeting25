@@ -1,6 +1,6 @@
 EBUDGETING SYSTEM V2.0
-WITH HTML, CSS, JS, PHP & MYSQL
 
+WITH HTML, CSS, JS, PHP & MYSQL
 fitur tersedia 
 - CRUD
 - Database Mysql
