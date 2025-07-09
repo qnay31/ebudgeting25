@@ -8,12 +8,12 @@ if (isset($_POST['management'])) {
 <?php if ($divisi == "Pembelian Barang") { ?>
 <div class="input-group mb-2 listProgram">
     <span class="input-group-text" id="basic-addon1"><b>Qty</b></span>
-    <input type="text" class="form-control rupiah" name="qty" maxlength="11" placeholder="qty perencaan"
-        onkeypress="return hanyaAngka(event)" autocomplete="off">
+    <input type="text" class="form-control rupiah" name="qty" id="qty-anggaran" maxlength="11"
+        placeholder="qty perencaan" onkeypress="return hanyaAngka(event)" autocomplete="off">
     <span class="input-group-text" id="basic-addon1"><b>Pcs</b></span>
 </div>
 
-<label for="" class="form-label">
+<label for="qty-anggaran" class="form-label">
     <span class="alertQty text-danger"></span>
 </label>
 

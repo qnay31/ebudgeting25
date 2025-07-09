@@ -8,7 +8,8 @@
         <div class="row justify-content-center">
             <div class="col-md-3 p-1">
                 <div class="button-list">
-                    <button class="btn btn-primary text-white w-100 active" id="btnList" href="#program">Program</button>
+                    <button class="btn btn-primary text-white w-100 active" id="btnList"
+                        href="#program">Program</button>
                 </div>
             </div>
 
@@ -44,13 +45,15 @@
 
             <div class="col-md-2 p-1">
                 <div class="button-list">
-                    <button class="btn btn-primary text-white w-100" id="btnList" href="#maintenance">Maintenance</button>
+                    <button class="btn btn-primary text-white w-100" id="btnList"
+                        href="#maintenance">Maintenance</button>
                 </div>
             </div>
 
             <div class="col-md-2 p-1">
                 <div class="button-list">
-                    <button class="btn btn-primary text-white w-100" id="btnList" href="#operasional">Operasional</button>
+                    <button class="btn btn-primary text-white w-100" id="btnList"
+                        href="#operasional">Operasional</button>
                 </div>
             </div>
 
@@ -90,7 +93,8 @@
         <div class="row justify-content-center">
             <div class="col-md-6 p-1">
                 <div class="button-list">
-                    <button class="btn btn-primary text-white w-100 active" id="btnList" href="#income">Income Media</button>
+                    <button class="btn btn-primary text-white w-100 active" id="btnList" href="#income">Income
+                        Media</button>
                 </div>
             </div>
         </div>
@@ -173,24 +177,7 @@
         </div>
         <!--//col-->
 
-        <div class="col-12 col-lg-6">
-            <div class="app-card app-card-chart h-100 shadow-sm">
-                <div class="app-card-header p-3 border-0">
-                    <h4 class="app-card-title">Grafik Asrama Yatim Yatim</h4>
-                </div>
-                <!--//app-card-header-->
-                <div class="app-card-body p-4">
-                    <div class="chart-container">
-                        <canvas id="chart-asrama"></canvas>
-                    </div>
-                </div>
-                <!--//app-card-body-->
-            </div>
-            <!--//app-card-->
-        </div>
-        <!--//col-->
-
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-12">
             <div class="app-card app-card-chart h-100 shadow-sm">
                 <div class="app-card-header p-3 border-0">
                     <h4 class="app-card-title">Grafik Santunan Bulanan</h4>

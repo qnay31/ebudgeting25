@@ -659,7 +659,7 @@ $(document).ready(function () {
                     <div class="text-center">
                         <a href="#"" data-bs-toggle="modal" data-bs-target="#aset${data["verEdit"]}"><i class="bi bi-pencil"></i></a> | 
                         <a href="" id="btnDelAset${data["verEdit"]}"><i class="bi bi-trash"></i></a>
-                    </di>
+                    </div>
     
                     <!-- Modal -->
                     <div class="modal fade" id="aset${data["verEdit"]}" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="modalLabel"    aria-hidden="true">
@@ -694,11 +694,11 @@ $(document).ready(function () {
                                         : `
                                         <div class="input-group mb-2">
                                             <span class="input-group-text" id="basic-addon1"><b>Qty</b></span>
-                                            <input type="text" class="form-control rupiah" name="qty" maxlength="11" placeholder="qty perencaan"
+                                            <input type="text" class="form-control rupiah" name="qty" id="edit-aset-qty" maxlength="11" placeholder="qty perencaan"
                                                 onkeypress="return hanyaAngka(event)" autocomplete="off" value="${data["verQty"]}">
                                             <span class="input-group-text" id="basic-addon1"><b>Pcs</b></span>
                                         </div>
-                                        <label for="" class="form-label">
+                                        <label for="edit-aset-qty" class="form-label">
                                             <span class="alertQty text-danger"></span>
                                         </label>
                                         `}

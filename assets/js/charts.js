@@ -22,14 +22,12 @@ listCharts.forEach(listChart => {
         document.querySelector(".charts-title .title-charts").innerHTML = listChart.innerHTML
         const idCharts = listChart.getAttribute("href")
         if (idCharts == "#program") {
-            $.getJSON("https://ebudgeting23.duniawebamira.my.id/data/chart_program.php", function (data) {
+            $.getJSON("https://localhost/ebudgeting23/data/chart_program.php", function (data) {
                 var isi_labels = [];
                 var anggaranPendidikan = [];
                 var terpakaiPendidikan = [];
                 var anggaranKesehatan = [];
                 var terpakaiKesehatan = [];
-                var anggaranAsrama = [];
-                var terpakaiAsrama = [];
                 var anggaranSantunan = [];
                 var terpakaiSantunan = [];
                 var anggaranBinaan = [];
@@ -45,8 +43,6 @@ listCharts.forEach(listChart => {
                     terpakaiPendidikan.push(data[i].terpakai_pendidikan);
                     anggaranKesehatan.push(data[i].anggaran_kesehatan);
                     terpakaiKesehatan.push(data[i].terpakai_kesehatan);
-                    anggaranAsrama.push(data[i].anggaran_asrama_yatim);
-                    terpakaiAsrama.push(data[i].terpakai_asrama_yatim);
                     anggaranSantunan.push(data[i].anggaran_santunanBulanan);
                     terpakaiSantunan.push(data[i].terpakai_santunanBulanan);
                     anggaranBinaan.push(data[i].anggaran_binaan);
@@ -113,25 +109,6 @@ listCharts.forEach(listChart => {
                 }
                 myBarKesehatan.data = newDataKesehatan;
                 window.myBarKesehatan.update()
-
-                let newDataAsrama = {
-                    labels: isi_labels,
-                    datasets: [{
-                            label: 'Anggaran Asrama Yatim',
-                            backgroundColor: "rgba(117,193,129,0.8)",
-                            hoverBackgroundColor: "rgba(1,200,129,1)",
-                            data: anggaranAsrama
-                        },
-                        {
-                            label: 'Terpakai Asrama Yatim',
-                            backgroundColor: "rgba(91,153,234,0.8)",
-                            hoverBackgroundColor: "rgba(1,130,234,1)",
-                            data: terpakaiAsrama
-                        }
-                    ]
-                }
-                myBarAsrama.data = newDataAsrama;
-                window.myBarAsrama.update()
 
                 let newDataSantunan = {
                     labels: isi_labels,
@@ -1102,15 +1079,13 @@ window.addEventListener('load', function () {
         readCookie("id_pengurus") == "ketua_yayasan"
     ) {
         // program
-        $.getJSON("https://ebudgeting23.duniawebamira.my.id/data/chart_program.php", function (data) {
+        $.getJSON("https://localhost/ebudgeting23/data/chart_program.php", function (data) {
 
             var isi_labels = [];
             var anggaranPendidikan = [];
             var terpakaiPendidikan = [];
             var anggaranKesehatan = [];
             var terpakaiKesehatan = [];
-            var anggaranAsrama = [];
-            var terpakaiAsrama = [];
             var anggaranSantunan = [];
             var terpakaiSantunan = [];
             var anggaranBinaan = [];
@@ -1126,8 +1101,6 @@ window.addEventListener('load', function () {
                 terpakaiPendidikan.push(data[i].terpakai_pendidikan);
                 anggaranKesehatan.push(data[i].anggaran_kesehatan);
                 terpakaiKesehatan.push(data[i].terpakai_kesehatan);
-                anggaranAsrama.push(data[i].anggaran_asrama_yatim);
-                terpakaiAsrama.push(data[i].terpakai_asrama_yatim);
                 anggaranSantunan.push(data[i].anggaran_santunanBulanan);
                 terpakaiSantunan.push(data[i].terpakai_santunanBulanan);
                 anggaranBinaan.push(data[i].anggaran_binaan);
@@ -1340,97 +1313,6 @@ window.addEventListener('load', function () {
                             backgroundColor: "rgba(91,153,234,0.8)",
                             hoverBackgroundColor: "rgba(1,130,234,1)",
                             data: terpakaiKesehatan
-                        }
-                    ]
-                },
-                options: {
-                    responsive: true,
-                    legend: {
-                        position: 'bottom',
-                        align: 'end',
-                    },
-
-                    tooltips: {
-                        mode: 'index',
-                        intersect: false,
-                        titleMarginBottom: 10,
-                        bodySpacing: 10,
-                        xPadding: 16,
-                        yPadding: 16,
-                        borderColor: window.chartColors.border,
-                        borderWidth: 1,
-                        backgroundColor: '#fff',
-                        bodyFontColor: window.chartColors.text,
-                        titleFontColor: window.chartColors.text,
-                        callbacks: {
-                            label: function (tooltipItem, chart) {
-                                var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label ||
-                                    '';
-                                return datasetLabel + ': Rp. ' + Number(tooltipItem.yLabel)
-                                    .toFixed(0)
-                                    .replace(/./g,
-                                        function (c,
-                                            i, a) {
-                                            return i > 0 && c !== "." && (a.length - i) % 3 === 0 ?
-                                                "." +
-                                                c : c;
-                                        });
-                            }
-                        },
-
-                    },
-                    scales: {
-                        xAxes: [{
-                            display: true,
-                            gridLines: {
-                                drawBorder: false,
-                                color: window.chartColors.border,
-                            },
-
-                        }],
-                        yAxes: [{
-                            display: true,
-                            gridLines: {
-                                drawBorder: false,
-                                color: window.chartColors.borders,
-                            },
-                            ticks: {
-                                beginAtZero: true,
-                                userCallback: function (value, index, values) {
-                                    if (parseInt(value) > 999) {
-                                        return 'Rp. ' + value.toString().replace(
-                                            /\B(?=(\d{3})+(?!\d))/g, ".");
-                                    } else if (parseInt(value) < -999) {
-                                        return '-Rp. ' + Math.abs(value).toString().replace(
-                                            /\B(?=(\d{3})+(?!\d))/g, ".");
-                                    } else {
-                                        return 'Rp. ' + value;
-                                    }
-                                }
-                            },
-                        }]
-                    }
-                }
-            });
-
-            // chart asrama yatim
-            var barChartAsrama = document.getElementById('chart-asrama').getContext('2d');
-            window.myBarAsrama = new Chart(barChartAsrama, {
-                type: 'bar',
-
-                data: {
-                    labels: isi_labels,
-                    datasets: [{
-                            label: 'Anggaran Asrama Yatim',
-                            backgroundColor: "rgba(117,193,129,0.8)",
-                            hoverBackgroundColor: "rgba(1,200,129,1)",
-                            data: anggaranAsrama
-                        },
-                        {
-                            label: 'Terpakai Asrama Yatim',
-                            backgroundColor: "rgba(91,153,234,0.8)",
-                            hoverBackgroundColor: "rgba(1,130,234,1)",
-                            data: terpakaiAsrama
                         }
                     ]
                 },

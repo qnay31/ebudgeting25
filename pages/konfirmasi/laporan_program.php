@@ -71,24 +71,6 @@ session_start();
             $hasil_terpakai3 = array_sum($total_terpakai3);
         }
 
-        // asrama yatim
-        $q4  = mysqli_query($conn, "SELECT * FROM input_program WHERE MONTH(tgl_pemakaian) = '$periode' AND laporan = 'Terverifikasi' AND program = 'Program Asrama Yatim' ");
-
-        $sql4 = $q4;
-        while($r4 = mysqli_fetch_array($sql4))
-        {
-            $d_anggaran4 = $r4['dana_anggaran'];
-            $i++;
-            $total_anggaran4[$i] = $d_anggaran4;
-
-            $hasil_anggaran4 = array_sum($total_anggaran4);
-
-            $d_terpakai4 = $r4['dana_terpakai'];
-            $total_terpakai4[$i] = $d_terpakai4;
-
-            $hasil_terpakai4 = array_sum($total_terpakai4);
-        }
-
         // santunan bulanan
         $q5  = mysqli_query($conn, "SELECT * FROM input_program WHERE MONTH(tgl_pemakaian) = '$periode' AND laporan = 'Terverifikasi' AND program = 'Program Santunan Bulanan'");
 
@@ -165,17 +147,6 @@ session_start();
                 `terpakai_kesehatan`    = '$hasil_terpakai2',
                 `anggaran_global`       = '$hasil_anggaran',
                 `terpakai_global`       = '$hasil_terpakai'
-                WHERE bulan = '$bulan' ");   
-            }
-                
-        // asrama yatim
-        } elseif ($program == 'Program Asrama Yatim') {
-            if (mysqli_fetch_assoc($c_query)) {
-                $tes = mysqli_query($conn, "UPDATE `data_program` SET 
-                `anggaran_asrama_yatim`    = '$hasil_anggaran4',
-                `terpakai_asrama_yatim`     = '$hasil_terpakai4',
-                `anggaran_global`           = '$hasil_anggaran',
-                `terpakai_global`           = '$hasil_terpakai'
                 WHERE bulan = '$bulan' ");   
             }
             
