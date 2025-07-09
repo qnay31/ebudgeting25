@@ -1013,18 +1013,18 @@
                                     <div class="inputLaporanAkunNew">
                                         <form action="" method="post">
                                             <div class="form-floating mb-1">
-                                                <select class="form-select akunNew" name="akun" id="input-laporan-akun"
-                                                    aria-label="Default select example">
+                                                <select class="form-select akunNew" name="akun"
+                                                    aria-label="Default select example" id="akunNew">
                                                 </select>
 
-                                                <label for="input-laporan-akun">Nama Akun</label>
+                                                <label for="floatingSelect">Nama Akun</label>
                                                 <span class="alertAkun text-danger"></span>
                                             </div>
 
                                             <div class="form-floating mb-1">
-                                                <input type="date" id="tgl-laporan" class="form-control" name="tanggal"
-                                                    placeholder="Tanggal Laporan">
-                                                <label for="tgl-laporan">Tanggal Laporan</label>
+                                                <input type="date" class="form-control" id="floatingInputTanggal"
+                                                    name="tanggal" placeholder="Tanggal Laporan">
+                                                <label for="floatingInputTanggal">Tanggal Laporan</label>
                                                 <span class="alertTanggal text-danger"></span>
                                             </div>
 
@@ -1078,10 +1078,10 @@
                                             </div>
 
                                             <div class="form-floating mb-1">
-                                                <input type="text" class="form-control rupiah" id="donatur-laporan"
+                                                <input type="text" class="form-control rupiah" id="floatingInputDonatur"
                                                     name="donatur" placeholder="Total Donatur"
                                                     onkeypress="return hanyaAngka(event)">
-                                                <label for="donatur-laporan">Total Donatur</label>
+                                                <label for="floatingInputDonatur">Total Donatur</label>
                                                 <span class="alertDonatur text-danger"></span>
                                             </div>
 
@@ -1104,10 +1104,10 @@
                                             </div>
 
                                             <div class="form-floating mb-2">
-                                                <input type="text" class="form-control rupiah" id="laporan-transfer"
-                                                    name="transfer" placeholder="Total Transfer"
-                                                    onkeypress="return hanyaAngka(event)">
-                                                <label for="laporan-transfer">Total Transfer</label>
+                                                <input type="text" class="form-control rupiah"
+                                                    id="floatingInputTransfer" name="transfer"
+                                                    placeholder="Total Transfer" onkeypress="return hanyaAngka(event)">
+                                                <label for="floatingInputTransfer">Total Transfer</label>
                                                 <span class="alertTransfer text-danger"></span>
                                             </div>
 

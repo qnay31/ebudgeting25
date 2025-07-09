@@ -3,14 +3,15 @@
         <div class="row justify-content-center">
             <div class="col-md-6 p-1">
                 <div class="button-list">
-                    <button class="btn btn-primary text-white w-100 active btnIncomeMedia" href="#income">Income Media <span
-                            class="notifIncomeMedia"></span></button>
+                    <button class="btn btn-primary text-white w-100 active btnIncomeMedia" href="#income">Income Media
+                        <span class="notifIncomeMedia"></span></button>
                 </div>
             </div>
 
             <div class="col-md-6 p-1">
                 <div class="button-list">
-                    <button class="btn btn-primary text-white w-100 btnNonResi" href="#noResi">Income Non Resi <span class="notifNonResi"></span></button>
+                    <button class="btn btn-primary text-white w-100 btnNonResi" href="#noResi">Income Non Resi <span
+                            class="notifNonResi"></span></button>
                 </div>
             </div>
         </div>
