@@ -21,7 +21,7 @@ if($num === 1 ) {
     
 } else {
     echo "0";
-    $sql ="INSERT INTO input_paudqu (id_pengurus, posisi, kategori, tgl_dibuat, deskripsi, dana_anggaran, tgl_laporan, pemakaian, dana_terpakai, status, laporan, dokumen) VALUES (
+    $sql ="INSERT INTO input_paudqu (id_pengurus, posisi, program, tgl_pengajuan, deskripsi, dana_anggaran, tgl_pemakaian, deskripsi_pemakaian, dana_terpakai, status, laporan, dokumen) VALUES (
         '{$dataLog[id_pengurus]}',
         '{$dataLog[posisi]}',
         '$kategori', 
