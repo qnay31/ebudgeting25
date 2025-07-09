@@ -343,8 +343,9 @@ function topFunction() {
 	document.documentElement.scrollTop = 0;
 }
 
-$('.online-box .dropdown-menu-content').load("./data/data_user.php");
-$('.online-box .dropdown-toggle').click(function (e) {
-	e.preventDefault()
-	$('.online-box .dropdown-menu-content').load("./data/data_user.php");
-})
+$.ajaxPrefilter(function (options) {
+	if (options.async === false) {
+		// console.warn("Memaksa async ke true pada: ", options.url);
+		options.async = true;
+	}
+});

@@ -191,7 +191,7 @@
                             <tr>
                                 <td>
                                     <b>
-                                        <center>Total Keseluruhan</center>
+                                        <div class="text-center">Total Keseluruhan</div>
                                     </b>
                                 </td>
                                 <td class="stat-cell total2022ListAnggaran"></td>
@@ -695,7 +695,7 @@
                             <tr>
                                 <td>
                                     <b>
-                                        <center>Total Keseluruhan</center>
+                                        <div class="text-center">Total Keseluruhan</div>
                                     </b>
                                 </td>
                                 <td class="stat-cell totalPemasukan"></td>
@@ -899,7 +899,7 @@
                         <tr>
                             <td>
                                 <b>
-                                    <center>Total Keseluruhan</center>
+                                    <div class="text-center">Total Keseluruhan</div>
                                 </b>
                             </td>
                             <td class="stat-cell totalPemasukan"></td>

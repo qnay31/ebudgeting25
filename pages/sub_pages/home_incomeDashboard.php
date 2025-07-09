@@ -3,7 +3,7 @@
     <div class="col-xs-12 col-md-4 col-lg-4">
         <div class="app-card app-card-stat shadow-sm h-100">
             <div class="app-card-body p-3 p-lg-4">
-                <h4 class="stats-type mb-1">FB Uang Saku I</h4>
+                <h4 class="stats-type mb-1">Facebook</h4>
                 <div class="stats-figure incomeI"></div>
                 <div class="stats-meta text-success">
                     Income/Bulan
@@ -18,98 +18,8 @@
     <div class="col-xs-12 col-md-4 col-lg-4">
         <div class="app-card app-card-stat shadow-sm h-100">
             <div class="app-card-body p-3 p-lg-4">
-                <h4 class="stats-type mb-1">FB Uang Saku II</h4>
+                <h4 class="stats-type mb-1">Instagram</h4>
                 <div class="stats-figure incomeII"></div>
-                <div class="stats-meta text-success">
-                    Income/Bulan
-                </div>
-            </div>
-            <!--//app-card-body-->
-        </div>
-        <!--//app-card-->
-    </div>
-    <!--//col-->
-
-    <div class="col-xs-12 col-md-4 col-lg-4">
-        <div class="app-card app-card-stat shadow-sm h-100">
-            <div class="app-card-body p-3 p-lg-4">
-                <h4 class="stats-type mb-1">IG Uang Saku</h4>
-                <div class="stats-figure incomeIII"></div>
-                <div class="stats-meta text-success">
-                    Income/Bulan
-                </div>
-            </div>
-            <!--//app-card-body-->
-        </div>
-        <!--//app-card-->
-    </div>
-    <!--//col-->
-
-    <div class="col-xs-12 col-md-6 col-lg-6">
-        <div class="app-card app-card-stat shadow-sm h-100">
-            <div class="app-card-body p-3 p-lg-4">
-                <h4 class="stats-type mb-1">FB Sembako</h4>
-                <div class="stats-figure incomeIG"></div>
-                <div class="stats-meta text-success">
-                    Income/Bulan
-                </div>
-            </div>
-            <!--//app-card-body-->
-        </div>
-        <!--//app-card-->
-    </div>
-    <!--//col-->
-
-    <div class="col-xs-12 col-md-6 col-lg-6">
-        <div class="app-card app-card-stat shadow-sm h-100">
-            <div class="app-card-body p-3 p-lg-4">
-                <h4 class="stats-type mb-1">IG Sembako</h4>
-                <div class="stats-figure incomeIGII"></div>
-                <div class="stats-meta text-success">
-                    Income/Bulan
-                </div>
-            </div>
-            <!--//app-card-body-->
-        </div>
-        <!--//app-card-->
-    </div>
-    <!--//col-->
-
-    <div class="col-xs-12 col-md-4 col-lg-4">
-        <div class="app-card app-card-stat shadow-sm h-100">
-            <div class="app-card-body p-3 p-lg-4">
-                <h4 class="stats-type mb-1">FB Pembangunan</h4>
-                <div class="stats-figure incomeIGIII"></div>
-                <div class="stats-meta text-success">
-                    Income/Bulan
-                </div>
-            </div>
-            <!--//app-card-body-->
-        </div>
-        <!--//app-card-->
-    </div>
-    <!--//col-->
-
-    <div class="col-xs-12 col-md-4 col-lg-4">
-        <div class="app-card app-card-stat shadow-sm h-100">
-            <div class="app-card-body p-3 p-lg-4">
-                <h4 class="stats-type mb-1">IG Pembangunan</h4>
-                <div class="stats-figure incomeIGIV"></div>
-                <div class="stats-meta text-success">
-                    Income/Bulan
-                </div>
-            </div>
-            <!--//app-card-body-->
-        </div>
-        <!--//app-card-->
-    </div>
-    <!--//col-->
-
-    <div class="col-xs-12 col-md-4 col-lg-4">
-        <div class="app-card app-card-stat shadow-sm h-100">
-            <div class="app-card-body p-3 p-lg-4">
-                <h4 class="stats-type mb-1">FB Kesehatan</h4>
-                <div class="stats-figure incomeFBKI"></div>
                 <div class="stats-meta text-success">
                     Income/Bulan
                 </div>
@@ -135,7 +45,7 @@
     </div>
     <!--//col-->
 
-    <div class="col-xs-12 col-md-4 col-lg-4">
+    <div class="col-xs-12 col-md-6 col-lg-6">
         <div class="app-card app-card-stat shadow-sm h-100">
             <div class="app-card-body p-3 p-lg-4">
                 <h4 class="stats-type mb-1">Total Keseluruhan Income Media</h4>
@@ -150,7 +60,7 @@
     </div>
     <!--//col-->
 
-    <div class="col-xs-12 col-md-4 col-lg-4">
+    <div class="col-xs-12 col-md-6 col-lg-6">
         <div class="app-card app-card-stat shadow-sm h-100">
             <div class="app-card-body p-3 p-lg-4">
                 <h4 class="stats-type mb-1">Total Keseluruhan Pemasukan Dgn Cashback </h4>
@@ -168,12 +78,12 @@
 
 <?php } else { ?>
 <div class="row g-4 mb-4 dashboard-top">
-    <div class="col-12 col-md-4 col-lg-4">
+    <div class="col-12 col-md-6 col-lg-6">
         <div class="app-card app-card-basic d-flex flex-column align-items-start shadow-sm">
             <div class="app-card-header p-3 border-bottom-0">
                 <div class="row align-items-center gx-3">
                     <div class="col-auto">
-                        <h4 class="app-card-title">FB Uang Saku I</h4>
+                        <h4 class="app-card-title">Facebook</h4>
                     </div>
                     <!--//col-->
                 </div>
@@ -193,14 +103,14 @@
         <!--//app-card-->
     </div>
     <!--//col-->
-    <div class="col-12 col-md-4 col-lg-4">
+    <div class="col-12 col-md-6 col-lg-6">
         <div class="app-card app-card-basic d-flex flex-column align-items-start shadow-sm">
             <div class="app-card-h
             .eader p-3 border-bottom-0">
                 <div class="row align-items-center gx-3">
                     <!--//col-->
                     <div class="col-auto">
-                        <h4 class="app-card-title">FB Uang Saku II</h4>
+                        <h4 class="app-card-title">Instagram</h4>
                     </div>
                     <!--//col-->
                 </div>
@@ -221,175 +131,10 @@
     </div>
     <!--//col-->
 
-    <!--//col-->
-    <div class="col-12 col-md-4 col-lg-4">
-        <div class="app-card app-card-basic d-flex flex-column align-items-start shadow-sm">
-            <div class="app-card-header p-3 border-bottom-0">
-                <div class="row align-items-center gx-3">
-                    <!--//col-->
-                    <div class="col-auto">
-                        <h4 class="app-card-title">IG Uang Saku</h4>
-                    </div>
-                    <!--//col-->
-                </div>
-                <!--//row-->
-            </div>
-            <!--//app-card-header-->
-            <div class="app-card-body px-4">
-
-                <div class="intro py-2 income-team-III">
-                    <div class="incomeHariKemarin"></div>
-                    <div class="incomeHariIni"></div>
-                    <div class="incomeBulanIni"></div>
-                </div>
-            </div>
-            <!--//app-card-body-->
-        </div>
-        <!--//app-card-->
-    </div>
-    <!--//col-->
-
-    <!--//col-->
-    <div class="col-12 col-lg-6">
-        <div class="app-card app-card-basic d-flex flex-column align-items-start shadow-sm">
-            <div class="app-card-header p-3 border-bottom-0">
-                <div class="row align-items-center gx-3">
-                    <!--//col-->
-                    <div class="col-auto">
-                        <h4 class="app-card-title">FB Sembako</h4>
-                    </div>
-                    <!--//col-->
-                </div>
-                <!--//row-->
-            </div>
-            <!--//app-card-header-->
-            <div class="app-card-body px-4">
-
-                <div class="intro py-2 income-team-IG">
-                    <div class="incomeHariKemarin"></div>
-                    <div class="incomeHariIni"></div>
-                    <div class="incomeBulanIni"></div>
-                </div>
-            </div>
-            <!--//app-card-body-->
-        </div>
-        <!--//app-card-->
-    </div>
-    <!--//col-->
-
-    <!--//col-->
-    <div class="col-12 col-lg-6">
-        <div class="app-card app-card-basic d-flex flex-column align-items-start shadow-sm">
-            <div class="app-card-header p-3 border-bottom-0">
-                <div class="row align-items-center gx-3">
-                    <!--//col-->
-                    <div class="col-auto">
-                        <h4 class="app-card-title">IG Sembako</h4>
-                    </div>
-                    <!--//col-->
-                </div>
-                <!--//row-->
-            </div>
-            <!--//app-card-header-->
-            <div class="app-card-body px-4">
-
-                <div class="intro py-2 income-team-IG-II">
-                    <div class="incomeHariKemarin"></div>
-                    <div class="incomeHariIni"></div>
-                    <div class="incomeBulanIni"></div>
-                </div>
-            </div>
-            <!--//app-card-body-->
-        </div>
-        <!--//app-card-->
-    </div>
-    <!--//col-->
-
-    <div class="col-12 col-lg-4">
-        <div class="app-card app-card-basic d-flex flex-column align-items-start shadow-sm">
-            <div class="app-card-header p-3 border-bottom-0">
-                <div class="row align-items-center gx-3">
-                    <!--//col-->
-                    <div class="col-auto">
-                        <h4 class="app-card-title">FB Pembangunan</h4>
-                    </div>
-                    <!--//col-->
-                </div>
-                <!--//row-->
-            </div>
-            <!--//app-card-header-->
-            <div class="app-card-body px-4">
-
-                <div class="intro py-2 income-team-IG-III">
-                    <div class="incomeHariKemarin"></div>
-                    <div class="incomeHariIni"></div>
-                    <div class="incomeBulanIni"></div>
-                </div>
-            </div>
-            <!--//app-card-body-->
-        </div>
-        <!--//app-card-->
-    </div>
-    <!--//col-->
-
-    <div class="col-12 col-lg-4">
-        <div class="app-card app-card-basic d-flex flex-column align-items-start shadow-sm">
-            <div class="app-card-header p-3 border-bottom-0">
-                <div class="row align-items-center gx-3">
-                    <!--//col-->
-                    <div class="col-auto">
-                        <h4 class="app-card-title">IG Pembangunan</h4>
-                    </div>
-                    <!--//col-->
-                </div>
-                <!--//row-->
-            </div>
-            <!--//app-card-header-->
-            <div class="app-card-body px-4">
-
-                <div class="intro py-2 income-team-IG-IV">
-                    <div class="incomeHariKemarin"></div>
-                    <div class="incomeHariIni"></div>
-                    <div class="incomeBulanIni"></div>
-                </div>
-            </div>
-            <!--//app-card-body-->
-        </div>
-        <!--//app-card-->
-    </div>
-    <!--//col-->
-
-    <div class="col-12 col-lg-4">
-        <div class="app-card app-card-basic d-flex flex-column align-items-start shadow-sm">
-            <div class="app-card-header p-3 border-bottom-0">
-                <div class="row align-items-center gx-3">
-                    <!--//col-->
-                    <div class="col-auto">
-                        <h4 class="app-card-title">FB Kesehatan</h4>
-                    </div>
-                    <!--//col-->
-                </div>
-                <!--//row-->
-            </div>
-            <!--//app-card-header-->
-            <div class="app-card-body px-4">
-
-                <div class="intro py-2 income-team-FB-KI">
-                    <div class="incomeHariKemarin"></div>
-                    <div class="incomeHariIni"></div>
-                    <div class="incomeBulanIni"></div>
-                </div>
-            </div>
-            <!--//app-card-body-->
-        </div>
-        <!--//app-card-->
-    </div>
-    <!--//col-->
-
     <div class="col-xs-12 col-md-4 col-lg-4">
         <div class="app-card app-card-stat shadow-sm h-100">
             <div class="app-card-body p-3 p-lg-4">
-                <h4 class="stats-type mb-1">FB Uang Saku I</h4>
+                <h4 class="stats-type mb-1">facebook</h4>
                 <div class="stats-figure incomeI"></div>
                 <div class="stats-meta text-success">
                     Income/Bulan
@@ -404,98 +149,8 @@
     <div class="col-xs-12 col-md-4 col-lg-4">
         <div class="app-card app-card-stat shadow-sm h-100">
             <div class="app-card-body p-3 p-lg-4">
-                <h4 class="stats-type mb-1">FB Uang Saku II</h4>
+                <h4 class="stats-type mb-1">Instagram</h4>
                 <div class="stats-figure incomeII"></div>
-                <div class="stats-meta text-success">
-                    Income/Bulan
-                </div>
-            </div>
-            <!--//app-card-body-->
-        </div>
-        <!--//app-card-->
-    </div>
-    <!--//col-->
-
-    <div class="col-xs-12 col-md-4 col-lg-4">
-        <div class="app-card app-card-stat shadow-sm h-100">
-            <div class="app-card-body p-3 p-lg-4">
-                <h4 class="stats-type mb-1">IG Uang Saku</h4>
-                <div class="stats-figure incomeIII"></div>
-                <div class="stats-meta text-success">
-                    Income/Bulan
-                </div>
-            </div>
-            <!--//app-card-body-->
-        </div>
-        <!--//app-card-->
-    </div>
-    <!--//col-->
-
-    <div class="col-xs-12 col-md-6 col-lg-6">
-        <div class="app-card app-card-stat shadow-sm h-100">
-            <div class="app-card-body p-3 p-lg-4">
-                <h4 class="stats-type mb-1">FB Sembako</h4>
-                <div class="stats-figure incomeIG"></div>
-                <div class="stats-meta text-success">
-                    Income/Bulan
-                </div>
-            </div>
-            <!--//app-card-body-->
-        </div>
-        <!--//app-card-->
-    </div>
-    <!--//col-->
-
-    <div class="col-xs-12 col-md-6 col-lg-6">
-        <div class="app-card app-card-stat shadow-sm h-100">
-            <div class="app-card-body p-3 p-lg-4">
-                <h4 class="stats-type mb-1">IG Sembako</h4>
-                <div class="stats-figure incomeIGII"></div>
-                <div class="stats-meta text-success">
-                    Income/Bulan
-                </div>
-            </div>
-            <!--//app-card-body-->
-        </div>
-        <!--//app-card-->
-    </div>
-    <!--//col-->
-
-    <div class="col-xs-12 col-md-4 col-lg-4">
-        <div class="app-card app-card-stat shadow-sm h-100">
-            <div class="app-card-body p-3 p-lg-4">
-                <h4 class="stats-type mb-1">FB Pembangunan</h4>
-                <div class="stats-figure incomeIGIII"></div>
-                <div class="stats-meta text-success">
-                    Income/Bulan
-                </div>
-            </div>
-            <!--//app-card-body-->
-        </div>
-        <!--//app-card-->
-    </div>
-    <!--//col-->
-
-    <div class="col-xs-12 col-md-4 col-lg-4">
-        <div class="app-card app-card-stat shadow-sm h-100">
-            <div class="app-card-body p-3 p-lg-4">
-                <h4 class="stats-type mb-1">IG Pembangunan</h4>
-                <div class="stats-figure incomeIGIV"></div>
-                <div class="stats-meta text-success">
-                    Income/Bulan
-                </div>
-            </div>
-            <!--//app-card-body-->
-        </div>
-        <!--//app-card-->
-    </div>
-    <!--//col-->
-
-    <div class="col-xs-12 col-md-4 col-lg-4">
-        <div class="app-card app-card-stat shadow-sm h-100">
-            <div class="app-card-body p-3 p-lg-4">
-                <h4 class="stats-type mb-1">FB Kesehatan</h4>
-                <div class="stats-figure incomeFBKI"></div>
                 <div class="stats-meta text-success">
                     Income/Bulan
                 </div>
@@ -521,7 +176,7 @@
     </div>
     <!--//col-->
 
-    <div class="col-xs-12 col-md-4 col-lg-4">
+    <div class="col-xs-12 col-md-6 col-lg-6">
         <div class="app-card app-card-stat shadow-sm h-100">
             <div class="app-card-body p-3 p-lg-4">
                 <h4 class="stats-type mb-1">Total Income Media</h4>
@@ -535,7 +190,7 @@
         <!--//app-card-->
     </div>
     <!--//col-->
-    <div class="col-xs-12 col-md-4 col-lg-4">
+    <div class="col-xs-12 col-md-6 col-lg-6">
         <div class="app-card app-card-stat shadow-sm h-100">
             <div class="app-card-body p-3 p-lg-4">
                 <h4 class="stats-type mb-1">Total Income Media</h4>

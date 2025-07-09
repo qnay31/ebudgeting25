@@ -5,63 +5,15 @@ session_start();
 
 include './../function.php';
 if ($_COOKIE["id_pengurus"] == "manager_facebook") {
-    if ($_COOKIE["username"] == "fb_saku1") {
-        $Ains = mysqli_query($conn, "SELECT akun_pengurus.profil, akun_pengurus.posisi, data_akun.team, data_akun.nomor_id 
-        AS id, data_akun.pemegang AS nama FROM akun_pengurus JOIN data_akun ON akun_pengurus.id_pengurus = 
-        data_akun.id_pengurus WHERE data_akun.team = 'I' GROUP BY data_akun.pemegang  ORDER BY `nama` ASC ");
+    $Ains = mysqli_query($conn, "SELECT akun_pengurus.profil, akun_pengurus.posisi, data_akun.team, data_akun.nomor_id 
+    AS id, data_akun.pemegang AS nama FROM akun_pengurus JOIN data_akun ON akun_pengurus.id_pengurus = 
+    data_akun.id_pengurus WHERE data_akun.team = 'I' GROUP BY data_akun.pemegang  ORDER BY `nama` ASC ");
+    
+} else if ($_COOKIE["id_pengurus"] == "manager_instagram") {
+    $Ains = mysqli_query($conn, "SELECT akun_pengurus.profil, akun_pengurus.posisi, data_akun.team, data_akun.nomor_id 
+    AS id, data_akun.pemegang AS nama FROM akun_pengurus JOIN data_akun ON akun_pengurus.id_pengurus = 
+    data_akun.id_pengurus WHERE data_akun.team = 'II' GROUP BY data_akun.pemegang  ORDER BY `nama` ASC ");
         
-    } elseif ($_COOKIE["username"] == "fb_saku2") {
-        $Ains = mysqli_query($conn, "SELECT akun_pengurus.profil, akun_pengurus.posisi, data_akun.team, data_akun.nomor_id 
-        AS id, data_akun.pemegang AS nama FROM akun_pengurus JOIN data_akun ON akun_pengurus.id_pengurus = 
-        data_akun.id_pengurus WHERE data_akun.team = 'II' GROUP BY data_akun.pemegang  ORDER BY `nama` ASC ");
-
-    } elseif ($_COOKIE["username"] == "ig_saku1") {
-        $Ains = mysqli_query($conn, "SELECT akun_pengurus.profil, akun_pengurus.posisi, data_akun.team, data_akun.nomor_id 
-        AS id, data_akun.pemegang AS nama FROM akun_pengurus JOIN data_akun ON akun_pengurus.id_pengurus = 
-        data_akun.id_pengurus WHERE data_akun.team = 'III' GROUP BY data_akun.pemegang  ORDER BY `nama` ASC ");
-
-    } elseif ($_COOKIE["username"] == "ig_saku2") {
-        $Ains = mysqli_query($conn, "SELECT akun_pengurus.profil, akun_pengurus.posisi, data_akun.team, data_akun.nomor_id 
-        AS id, data_akun.pemegang AS nama FROM akun_pengurus JOIN data_akun ON akun_pengurus.id_pengurus = 
-        data_akun.id_pengurus WHERE data_akun.team = 'IV' GROUP BY data_akun.pemegang  ORDER BY `nama` ASC ");
-
-    } elseif ($_COOKIE["username"] == "fb_sembako") {
-        $Ains = mysqli_query($conn, "SELECT akun_pengurus.profil, akun_pengurus.posisi, data_akun.team, data_akun.nomor_id 
-        AS id, data_akun.pemegang AS nama FROM akun_pengurus JOIN data_akun ON akun_pengurus.id_pengurus = 
-        data_akun.id_pengurus WHERE data_akun.team = 'V' GROUP BY data_akun.pemegang  ORDER BY `nama` ASC ");
-
-    } elseif ($_COOKIE["username"] == "ig_sembako") {
-        $Ains = mysqli_query($conn, "SELECT akun_pengurus.profil, akun_pengurus.posisi, data_akun.team, data_akun.nomor_id 
-        AS id, data_akun.pemegang AS nama FROM akun_pengurus JOIN data_akun ON akun_pengurus.id_pengurus = 
-        data_akun.id_pengurus WHERE data_akun.team = 'VI' GROUP BY data_akun.pemegang  ORDER BY `nama` ASC ");
-
-    } elseif ($_COOKIE["username"] == "fb_pembangunan") {
-        $Ains = mysqli_query($conn, "SELECT akun_pengurus.profil, akun_pengurus.posisi, data_akun.team, data_akun.nomor_id 
-        AS id, data_akun.pemegang AS nama FROM akun_pengurus JOIN data_akun ON akun_pengurus.id_pengurus = 
-        data_akun.id_pengurus WHERE data_akun.team = 'VII' GROUP BY data_akun.pemegang  ORDER BY `nama` ASC ");
-
-    } elseif ($_COOKIE["username"] == "ig_pembangunan") {
-        $Ains = mysqli_query($conn, "SELECT akun_pengurus.profil, akun_pengurus.posisi, data_akun.team, data_akun.nomor_id 
-        AS id, data_akun.pemegang AS nama FROM akun_pengurus JOIN data_akun ON akun_pengurus.id_pengurus = 
-        data_akun.id_pengurus WHERE data_akun.team = 'VIII' GROUP BY data_akun.pemegang  ORDER BY `nama` ASC ");
-
-    } elseif ($_COOKIE["username"] == "manager_fb") {
-        $Ains = mysqli_query($conn, "SELECT akun_pengurus.profil, akun_pengurus.posisi, data_akun.team, data_akun.nomor_id 
-        AS id, data_akun.pemegang AS nama FROM akun_pengurus JOIN data_akun ON akun_pengurus.id_pengurus = 
-        data_akun.id_pengurus WHERE data_akun.team LIKE 'I' OR data_akun.team LIKE 'VII' OR data_akun.team LIKE 'IX' GROUP BY data_akun.pemegang  ORDER BY `nama` ASC ");
-    
-    } elseif ($_COOKIE["username"] == "manager_ig") {
-        $Ains = mysqli_query($conn, "SELECT akun_pengurus.profil, akun_pengurus.posisi, data_akun.team, data_akun.nomor_id 
-        AS id, data_akun.pemegang AS nama FROM akun_pengurus JOIN data_akun ON akun_pengurus.id_pengurus = 
-        data_akun.id_pengurus WHERE data_akun.team LIKE 'III' OR data_akun.team LIKE 'VI' OR data_akun.team LIKE 'VIII' GROUP BY data_akun.pemegang  ORDER BY `nama` ASC ");
-
-    } else {
-        $Ains = mysqli_query($conn, "SELECT akun_pengurus.profil, akun_pengurus.posisi, data_akun.team, data_akun.nomor_id 
-        AS id, data_akun.pemegang AS nama FROM akun_pengurus JOIN data_akun ON akun_pengurus.id_pengurus = 
-        data_akun.id_pengurus WHERE data_akun.team = 'IX' GROUP BY data_akun.pemegang  ORDER BY `nama` ASC ");
-    
-    }
-
 } else {
     $Ains = mysqli_query($conn, "SELECT * FROM akun_pengurus WHERE id_pengurus = 'sosial_media' ORDER BY `nama` ASC ");
 }

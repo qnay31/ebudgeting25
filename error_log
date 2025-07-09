@@ -1,2 +1,0 @@
-[04-Jul-2025 17:27:34 Asia/Jakarta] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/ncpzrzmv/ebudgeting23.duniawebamira.my.id/home.php on line 3
-[04-Jul-2025 17:28:24 Asia/Jakarta] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/ncpzrzmv/ebudgeting23.duniawebamira.my.id/home.php on line 3

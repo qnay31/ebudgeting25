@@ -29,9 +29,6 @@ if ($month == 0) {
     };
 }
 
-
-
-
 // Table colums
 $columns = array(
     array(
@@ -169,15 +166,8 @@ $columns = array(
         'db' => 'team', 
         'dt' => 'lapTeam',
         'formatter' => function( $d, $row ) {
-            return $d == "I" ? "FB Uang Saku I" : 
-            ($d == "II" ? "FB Uang Saku II" : 
-            ($d == "III" ? "IG Uang Saku I" : 
-            ($d == "IV" ? "IG Uang Saku II" : 
-            ($d == "V" ? "FB Sembako" : 
-            ($d == "VI" ? "IG Sembako" : 
-            ($d == "VII" ? "FB Pembangunan" :
-            ($d == "VIII" ? "IG Pembangunan" : 
-            ($d == "IX" ? "FB Kesehatan" : "Tidak Ada"))))))));
+            return $d == "I" ? "Facebook" : 
+            ($d == "II" ? "Instagram" : "Tidak Ada");
         }
     ),
     

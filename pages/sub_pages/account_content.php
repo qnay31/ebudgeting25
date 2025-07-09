@@ -121,7 +121,8 @@
                     <?php if (
                         $_COOKIE['id_pengurus'] == "sosial_media"
                     ) { ?>
-                    <form action="" method="post" id="form" class="formChangeUsername py-2" style="display: none">
+                    <form action="" method="post" id="formUsername" class="formChangeUsername py-2"
+                        style="display: none">
                         <div class="form-floating mb-2">
                             <input type="hidden" name="id" value="<?= $dataLog["id"]; ?>">
                             <input type="text" class="form-control" name="newUsername" id="username"
@@ -182,13 +183,14 @@
                         </div>
                     </div>
                     <!--//row-->
-                    <form action="" method="post" id="form" class="formChangeNameAccount py-2" style="display: none">
+                    <form action="" method="post" id="formNameAccount" class="formChangeNameAccount py-2"
+                        style="display: none">
                         <div class="form-floating mb-2">
                             <input type="hidden" name="id" value="<?= $dPengurus["id"]; ?>">
-                            <select class="form-select akunNew" name="akun" aria-label="Default select example"
-                                id="akunNew" style="font-size: 13px">
+                            <select class="form-select akunNew" name="akun" id="setting-account"
+                                aria-label="Default select example" style="font-size: 13px">
                             </select>
-                            <label for="floatingSelect">Nama Akun</label>
+                            <label for="setting-account">Nama Akun</label>
                             <span class="alertAkun text-danger"></span>
                         </div>
 
@@ -204,13 +206,14 @@
                         </div>
                     </form>
 
-                    <form action="" method="post" id="form" class="formDeleteNameAccount py-2" style="display: none">
+                    <form action="" method="post" id="formDelete" class="formDeleteNameAccount py-2"
+                        style="display: none">
                         <div class="form-floating mb-2">
                             <input type="hidden" name="id" value="<?= $dPengurus["id"]; ?>">
-                            <select class="form-select akunNew" name="akun" aria-label="Default select example"
-                                id="akunNew" style="font-size: 13px">
+                            <select class="form-select akunNew" name="akun" id="setting-delete-account"
+                                aria-label="Default select example" id="akunNew" style="font-size: 13px">
                             </select>
-                            <label for="floatingSelect">Nama Akun</label>
+                            <label for="setting-delete-account">Nama Akun</label>
                             <span class="alertAkun text-danger"></span>
                         </div>
 
@@ -234,12 +237,13 @@
                         </div>
                     </div>
                     <!--//row-->
-                    <form action="" method="post" id="form" class="formChangePassword py-2" style="display: none">
+                    <form action="" method="post" id="formPassword" class="formChangePassword py-2"
+                        style="display: none">
                         <div class="password mb-2">
                             <input type="hidden" name="id" value="<?= $dataLog["id"]; ?>">
-                            <label for="basic-url" toggle="#password-field" class="show-password toggle-password"><span
+                            <span toggle="#password-field" class="show-password toggle-password"><span
                                     class="showMe">Tampilkan</span>
-                                Password</label>
+                                Password</span>
                             <label class="sr-only" for="password-field">Password</label>
                             <input name="password" type="password" class="form-control signup-password"
                                 id="password-field" placeholder="Password Baru" maxlength='32' autocomplete="off">
@@ -247,9 +251,9 @@
                         </div>
 
                         <div class="password mb-2">
-                            <label for="basic-url" toggle="#password-field2" class="show-password toggle-password"><span
+                            <span toggle="#password-field2" class="show-password toggle-password"><span
                                     class="showMe2">Tampilkan</span>
-                                Password</label>
+                                Password</span>
                             <label class="sr-only" for="password-field2">Password</label>
                             <input id="password-field2" name="confirmPassword" type="password"
                                 class="form-control signup-password" placeholder="Konfirmasi Password" maxlength='32'

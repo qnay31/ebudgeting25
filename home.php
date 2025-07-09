@@ -39,7 +39,7 @@
     <!-- FontAwesome JS-->
     <script defer src="assets/plugins/fontawesome/js/all.min.js"></script>
 
-    <?php if ($_COOKIE['id_pengurus'] == "manager_instagram") { ?>
+    <?php if ($_COOKIE['id_pengurus'] == "manager_instagram" || $_COOKIE['id_pengurus'] == "manager_facebook") { ?>
     <?php } else { ?>
     <!-- owl corousel -->
     <link rel="stylesheet" href="./owlcarousel/assets/owl.carousel.min.css">
@@ -112,7 +112,7 @@
     <!-- croppie -->
     <script src="https://unpkg.com/cropperjs@1.5.13/dist/cropper.min.js"></script>
 
-    <?php if ($_COOKIE['id_pengurus'] == "manager_instagram") { ?>
+    <?php if ($_COOKIE['id_pengurus'] == "manager_instagram" || $_COOKIE['id_pengurus'] == "manager_facebook") { ?>
     <?php } else { ?>
     <!-- owl corousel -->
     <script src="./owlcarousel/owl.carousel.js"></script>
@@ -186,11 +186,12 @@
         $_COOKIE['id_pengurus'] == "kepala_pengajuan" ||
         $_COOKIE['id_pengurus'] == "ketua_yayasan" ||
         $_COOKIE['id_pengurus'] == "kepala_income" ||
-        $_COOKIE['id_pengurus'] == "manager_facebook"
+        $_COOKIE['id_pengurus'] == "manager_facebook" || 
+        $_COOKIE['id_pengurus'] == "manager_instagram"
         ) { ?>
     <script src="./assets/js/dataTable_laporan.js?v=<?= filemtime('./assets/js/dataTable_laporan.js'); ?>"></script>
     <?php } ?>
-    <?php if ($_COOKIE['id_pengurus'] == "sosial_media" || $_COOKIE['id_pengurus'] == "manager_instagram") { ?>
+    <?php if ($_COOKIE['id_pengurus'] == "sosial_media") { ?>
     <script src="./assets/js/dataTable_laporanIncome.js?v=<?= filemtime('./assets/js/dataTable_laporanIncome.js'); ?>">
     </script>
     <?php } ?>

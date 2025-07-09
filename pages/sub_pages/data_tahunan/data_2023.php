@@ -226,7 +226,7 @@
                             <tr>
                                 <td>
                                     <b>
-                                        <center>Total Keseluruhan</center>
+                                        <div class="text-center">Total Keseluruhan</div>
                                     </b>
                                 </td>
                                 <td class="stat-cell total2023ListAnggaran"></td>
@@ -768,33 +768,12 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><a>Pemasukan Team I</a></td>
+                                <td><a>Pemasukan Team Faceook</a></td>
                                 <td class="stat-cell teamI"></td>
                             </tr>
                             <tr>
-                                <td><a>Pemasukan Team II</a></td>
+                                <td><a>Pemasukan Team Instagram</a></td>
                                 <td class="stat-cell teamII"></td>
-                            </tr>
-                            <tr>
-                                <td><a>Pemasukan Team III</a></td>
-                                <td class="stat-cell teamIV"></td>
-                            </tr>
-                            <tr>
-                                <td><a>Pemasukan Team IG I</a></td>
-                                <td class="stat-cell teamIG"></td>
-                            </tr>
-                            <tr>
-                                <td><a>Pemasukan Team IG II</a></td>
-                                <td class="stat-cell teamIGII"></td>
-                            </tr>
-                            <tr>
-                                <td><a>Pemasukan Team IG III</a></td>
-                                <td class="stat-cell teamIGIII"></td>
-                            </tr>
-                            <tr>
-                                <td><a>Pemasukan Team Pembangunan</a></td>
-                                <td class="stat-cell teamIII"></td>
-                            </tr>
                             <tr>
                                 <td><a>Pemasukan Non Resi</a></td>
                                 <td class="stat-cell iResi"></td>
@@ -804,7 +783,7 @@
                             <tr>
                                 <td>
                                     <b>
-                                        <center>Total Keseluruhan</center>
+                                        <div class="text-center">Total Keseluruhan</center>
                                     </b>
                                 </td>
                                 <td class="stat-cell totalPemasukan"></td>
@@ -1033,40 +1012,12 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><a>Pemasukan FB Saku I</a></td>
+                            <td><a>Pemasukan Facebook</a></td>
                             <td class="stat-cell teamI"></td>
                         </tr>
                         <tr>
-                            <td><a>Pemasukan FB Saku II</a></td>
+                            <td><a>Pemasukan Instagram</a></td>
                             <td class="stat-cell teamII"></td>
-                        </tr>
-                        <tr>
-                            <td><a>Pemasukan IG Saku I</a></td>
-                            <td class="stat-cell teamIII"></td>
-                        </tr>
-                        <!-- <tr>
-                            <td><a>Pemasukan IG Saku II</a></td>
-                            <td class="stat-cell teamIV"></td>
-                        </tr> -->
-                        <tr>
-                            <td><a>Pemasukan FB Sembako</a></td>
-                            <td class="stat-cell teamIG"></td>
-                        </tr>
-                        <tr>
-                            <td><a>Pemasukan IG Sembako</a></td>
-                            <td class="stat-cell teamIGII"></td>
-                        </tr>
-                        <tr>
-                            <td><a>Pemasukan FB Pembangunan</a></td>
-                            <td class="stat-cell teamIGIII"></td>
-                        </tr>
-                        <tr>
-                            <td><a>Pemasukan IG Pembangunan</a></td>
-                            <td class="stat-cell teamIGIV"></td>
-                        </tr>
-                        <tr>
-                            <td><a>Pemasukan FB Kesehatan</a></td>
-                            <td class="stat-cell teamFBKI"></td>
                         </tr>
                         <tr>
                             <td><a>Pemasukan Non Resi</a></td>
@@ -1077,7 +1028,7 @@
                         <tr>
                             <td>
                                 <b>
-                                    <center>Total Keseluruhan</center>
+                                    <div class="text-center">Total Keseluruhan</div>
                                 </b>
                             </td>
                             <td class="stat-cell totalPemasukan"></td>

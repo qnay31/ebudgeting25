@@ -342,7 +342,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`;
             }
         }, {
             "targets": 1,
@@ -386,9 +386,9 @@ $(document).ready(function () {
             "render": function (data) {
                 var edit =
                     `
-                <center> 
+                <div class="text-center"> 
                     <a href="" id="btnConfirmProgram${data}"><i class="bi bi-check-circle"></i></a>
-                </center>
+                </div>
 
                 <script>
                     // Confirm
@@ -449,7 +449,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`;
             }
         }, {
             "targets": 1,
@@ -487,9 +487,9 @@ $(document).ready(function () {
             "render": function (data) {
                 var edit =
                     `
-                <center> 
+                <div class="text-center"> 
                     <a href="" id="btnConfirmLogistik${data}"><i class="bi bi-check-circle"></i></a>
-                </center>
+                </div>
 
                 <script>
                     // Confirm
@@ -549,7 +549,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`;
             }
         }, {
             "targets": 1,
@@ -599,9 +599,9 @@ $(document).ready(function () {
             "render": function (data) {
                 var edit =
                     `
-                <center> 
+                <div class="text-center"> 
                     <a href="" id="btnConfirmAset${data}"><i class="bi bi-check-circle"></i></a>
-                </center>
+                </div>
 
                 <script>
                     // Confirm
@@ -662,7 +662,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`;
             }
         }, {
             "targets": 1,
@@ -700,9 +700,9 @@ $(document).ready(function () {
             "render": function (data) {
                 var edit =
                     `
-                <center> 
+                <div class="text-center"> 
                     <a href="" id="btnConfirmMakan${data}"><i class="bi bi-check-circle"></i></a>
-                </center>
+                </div>
 
                 <script>
                     // Confirm
@@ -763,7 +763,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`;
             }
         }, {
             "targets": 1,
@@ -801,9 +801,9 @@ $(document).ready(function () {
             "render": function (data) {
                 var edit =
                     `
-                <center> 
+                <div class="text-center"> 
                     <a href="" id="btnConfirmGaji${data}"><i class="bi bi-check-circle"></i></a>
-                </center>
+                </div>
 
                 <script>
                     // Confirm
@@ -864,7 +864,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`;
             }
         }, {
             "targets": 1,
@@ -902,9 +902,9 @@ $(document).ready(function () {
             "render": function (data) {
                 var edit =
                     `
-                <center> 
+                <div class="text-center"> 
                     <a href="" id="btnConfirmLainnya${data}"><i class="bi bi-check-circle"></i></a>
-                </center>
+                </div>
 
                 <script>
                     // Confirm
@@ -965,7 +965,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`;
             }
         }, {
             "targets": 1,
@@ -1003,9 +1003,9 @@ $(document).ready(function () {
             "render": function (data) {
                 var edit =
                     `
-                <center> 
+                <div class="text-center"> 
                     <a href="" id="btnConfirmMaintenance${data}"><i class="bi bi-check-circle"></i></a>
-                </center>
+                </div>
 
                 <script>
                     // Confirm
@@ -1066,7 +1066,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`;
             }
         }, {
             "targets": 1,
@@ -1104,9 +1104,9 @@ $(document).ready(function () {
             "render": function (data) {
                 var edit =
                     `
-                <center> 
+                <div class="text-center"> 
                     <a href="" id="btnConfirmOperasional${data}"><i class="bi bi-check-circle"></i></a>
-                </center>
+                </div>
 
                 <script>
                     // Confirm
@@ -1167,7 +1167,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`;
             }
         }, {
             "targets": 1,
@@ -1205,9 +1205,9 @@ $(document).ready(function () {
             "render": function (data) {
                 var edit =
                     `
-                <center> 
+                <div class="text-center"> 
                     <a href="" id="btnConfirmPaud${data}"><i class="bi bi-check-circle"></i></a>
-                </center>
+                </div>
 
                 <script>
                     // Confirm
@@ -1268,13 +1268,13 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`;
             }
         }, {
             "targets": 1,
             data: "verKategori",
             "render": function (data) {
-                return `<center>Pembayaran ${Capitalize(data)}</center>`;
+                return `<div class="text-center">Pembayaran ${Capitalize(data)}</div>`;
             }
         }, {
             "targets": 2,
@@ -1306,9 +1306,9 @@ $(document).ready(function () {
             "render": function (data) {
                 var edit =
                     `
-                <center> 
+                <div class="text-center"> 
                     <a href="" id="btnConfirmJasa${data}"><i class="bi bi-check-circle"></i></a>
-                </center>
+                </div>
 
                 <script>
                     // Confirm
@@ -1369,7 +1369,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`;
             }
         }, {
             "targets": 1,
@@ -1399,7 +1399,7 @@ $(document).ready(function () {
             "targets": 5,
             data: "anggaran",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 6,
@@ -1417,7 +1417,7 @@ $(document).ready(function () {
             "targets": 8,
             data: "terpakai",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 9,
@@ -1436,11 +1436,11 @@ $(document).ready(function () {
             data: "lapResi",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                         <a href="#" name="view" data-id="${data}" class="view_data_program${data}">
                             <i class="bi bi-images"></i>
                         </a>
-                    </center>
+                    </div>
 
                     <div id="dataModal_program${data}" class="modal fade">
                         <div class="modal-dialog">
@@ -1505,9 +1505,9 @@ $(document).ready(function () {
             "render": function (data) {
                 var edit =
                     `
-                <center> 
+                <div class="text-center"> 
                     <a href="" id="btnConfirmLaporanProgram${data["lapEdit"]}"><i class="bi bi-check-circle"></i></a>
-                </center>
+                </div>
 
                 <script>
                     // Confirm
@@ -1568,7 +1568,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`;
             }
         }, {
             "targets": 1,
@@ -1592,7 +1592,7 @@ $(document).ready(function () {
             "targets": 4,
             data: "anggaran",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 5,
@@ -1610,7 +1610,7 @@ $(document).ready(function () {
             "targets": 7,
             data: "terpakai",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 8,
@@ -1629,11 +1629,11 @@ $(document).ready(function () {
             data: "lapResi",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                         <a href="#" name="view" data-id="${data}" class="view_data_logistik${data}">
                             <i class="bi bi-images"></i>
                         </a>
-                    </center>
+                    </div>
 
                     <div id="dataModal_logistik${data}" class="modal fade">
                         <div class="modal-dialog">
@@ -1698,9 +1698,9 @@ $(document).ready(function () {
             "render": function (data) {
                 var edit =
                     `
-                <center> 
+                <div class="text-center"> 
                     <a href="" id="btnConfirmLaporanLogistik${data["lapEdit"]}"><i class="bi bi-check-circle"></i></a>
-                </center>
+                </div>
 
                 <script>
                     // Confirm
@@ -1761,7 +1761,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`;
             }
         }, {
             "targets": 1,
@@ -1785,7 +1785,7 @@ $(document).ready(function () {
             "targets": 4,
             data: "lapQtyAnggaran",
             "render": function (data) {
-                return data == 0 ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data) + ' Pcs';
+                return data == 0 ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data) + ' Pcs';
             }
         }, {
             "targets": 5,
@@ -1797,7 +1797,7 @@ $(document).ready(function () {
             "targets": 6,
             data: "anggaran",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 7,
@@ -1809,7 +1809,7 @@ $(document).ready(function () {
             "targets": 8,
             data: "lapQtyTerpakai",
             "render": function (data) {
-                return data == 0 || data == null ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data) + ' Pcs';
+                return data == 0 || data == null ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data) + ' Pcs';
             }
         }, {
             "targets": 9,
@@ -1821,7 +1821,7 @@ $(document).ready(function () {
             "targets": 10,
             data: "terpakai",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 11,
@@ -1840,11 +1840,11 @@ $(document).ready(function () {
             data: "lapResi",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                         <a href="#" name="view" data-id="${data}" class="view_data_aset_yayasan${data}">
                             <i class="bi bi-images"></i>
                         </a>
-                    </center>
+                    </div>
 
                     <div id="dataModal_aset_yayasan${data}" class="modal fade">
                         <div class="modal-dialog">
@@ -1909,9 +1909,9 @@ $(document).ready(function () {
             "render": function (data) {
                 var edit =
                     `
-                <center> 
+                <div class="text-center"> 
                     <a href="" id="btnConfirmLaporanAset${data["lapEdit"]}"><i class="bi bi-check-circle"></i></a>
-                </center>
+                </div>
 
                 <script>
                     // Confirm
@@ -1973,7 +1973,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`;
             }
         }, {
             "targets": 1,
@@ -1997,7 +1997,7 @@ $(document).ready(function () {
             "targets": 4,
             data: "anggaran",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 5,
@@ -2015,7 +2015,7 @@ $(document).ready(function () {
             "targets": 7,
             data: "terpakai",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 8,
@@ -2034,11 +2034,11 @@ $(document).ready(function () {
             data: "lapResi",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                         <a href="#" name="view" data-id="${data}" class="view_data_uang_makan${data}">
                             <i class="bi bi-images"></i>
                         </a>
-                    </center>
+                    </div>
 
                     <div id="dataModal_uang_makan${data}" class="modal fade">
                         <div class="modal-dialog">
@@ -2103,9 +2103,9 @@ $(document).ready(function () {
             "render": function (data) {
                 var edit =
                     `
-                <center> 
+                <div class="text-center"> 
                     <a href="" id="btnConfirmLaporanMakan${data["lapEdit"]}"><i class="bi bi-check-circle"></i></a>
-                </center>
+                </div>
 
                 <script>
                     // Confirm
@@ -2167,7 +2167,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`;
             }
         }, {
             "targets": 1,
@@ -2191,7 +2191,7 @@ $(document).ready(function () {
             "targets": 4,
             data: "anggaran",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 5,
@@ -2209,7 +2209,7 @@ $(document).ready(function () {
             "targets": 7,
             data: "terpakai",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 8,
@@ -2228,11 +2228,11 @@ $(document).ready(function () {
             data: "lapResi",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                         <a href="#" name="view" data-id="${data}" class="view_data_gaji${data}">
                             <i class="bi bi-images"></i>
                         </a>
-                    </center>
+                    </div>
 
                     <div id="dataModal_gaji${data}" class="modal fade">
                         <div class="modal-dialog">
@@ -2297,9 +2297,9 @@ $(document).ready(function () {
             "render": function (data) {
                 var edit =
                     `
-                <center> 
+                <div class="text-center"> 
                     <a href="" id="btnConfirmLaporanGaji${data["lapEdit"]}"><i class="bi bi-check-circle"></i></a>
-                </center>
+                </div>
 
                 <script>
                     // Confirm
@@ -2361,7 +2361,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`;
             }
         }, {
             "targets": 1,
@@ -2385,7 +2385,7 @@ $(document).ready(function () {
             "targets": 4,
             data: "anggaran",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 5,
@@ -2403,7 +2403,7 @@ $(document).ready(function () {
             "targets": 7,
             data: "terpakai",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 8,
@@ -2422,11 +2422,11 @@ $(document).ready(function () {
             data: "lapResi",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                         <a href="#" name="view" data-id="${data}" class="view_data_lainnya${data}">
                             <i class="bi bi-images"></i>
                         </a>
-                    </center>
+                    </div>
 
                     <div id="dataModal_lainnya${data}" class="modal fade">
                         <div class="modal-dialog">
@@ -2491,9 +2491,9 @@ $(document).ready(function () {
             "render": function (data) {
                 var edit =
                     `
-                <center> 
+                <div class="text-center"> 
                     <a href="" id="btnConfirmLaporanLainnya${data["lapEdit"]}"><i class="bi bi-check-circle"></i></a>
-                </center>
+                </div>
 
                 <script>
                     // Confirm
@@ -2555,7 +2555,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`;
             }
         }, {
             "targets": 1,
@@ -2579,7 +2579,7 @@ $(document).ready(function () {
             "targets": 4,
             data: "anggaran",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 5,
@@ -2597,7 +2597,7 @@ $(document).ready(function () {
             "targets": 7,
             data: "terpakai",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 8,
@@ -2616,11 +2616,11 @@ $(document).ready(function () {
             data: "lapResi",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                         <a href="#" name="view" data-id="${data}" class="view_data_maintenance${data}">
                             <i class="bi bi-images"></i>
                         </a>
-                    </center>
+                    </div>
 
                     <div id="dataModal_maintenance${data}" class="modal fade">
                         <div class="modal-dialog">
@@ -2685,9 +2685,9 @@ $(document).ready(function () {
             "render": function (data) {
                 var edit =
                     `
-                <center> 
+                <div class="text-center"> 
                     <a href="" id="btnConfirmLaporanMaintenance${data["lapEdit"]}"><i class="bi bi-check-circle"></i></a>
-                </center>
+                </div>
 
                 <script>
                     // Confirm
@@ -2749,7 +2749,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`;
             }
         }, {
             "targets": 1,
@@ -2773,7 +2773,7 @@ $(document).ready(function () {
             "targets": 4,
             data: "anggaran",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 5,
@@ -2791,7 +2791,7 @@ $(document).ready(function () {
             "targets": 7,
             data: "terpakai",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 8,
@@ -2810,11 +2810,11 @@ $(document).ready(function () {
             data: "lapResi",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                         <a href="#" name="view" data-id="${data}" class="view_data_operasional${data}">
                             <i class="bi bi-images"></i>
                         </a>
-                    </center>
+                    </div>
 
                     <div id="dataModal_operasional${data}" class="modal fade">
                         <div class="modal-dialog">
@@ -2879,9 +2879,9 @@ $(document).ready(function () {
             "render": function (data) {
                 var edit =
                     `
-                <center> 
+                <div class="text-center"> 
                     <a href="" id="btnConfirmLaporanOperasional${data["lapEdit"]}"><i class="bi bi-check-circle"></i></a>
-                </center>
+                </div>
 
                 <script>
                     // Confirm
@@ -2943,7 +2943,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`;
             }
         }, {
             "targets": 1,
@@ -2967,7 +2967,7 @@ $(document).ready(function () {
             "targets": 4,
             data: "anggaran",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 5,
@@ -2985,7 +2985,7 @@ $(document).ready(function () {
             "targets": 7,
             data: "terpakai",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 8,
@@ -3004,11 +3004,11 @@ $(document).ready(function () {
             data: "lapResi",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                         <a href="#" name="view" data-id="${data}" class="view_data_paud${data}">
                             <i class="bi bi-images"></i>
                         </a>
-                    </center>
+                    </div>
 
                     <div id="dataModal_paud${data}" class="modal fade">
                         <div class="modal-dialog">
@@ -3073,9 +3073,9 @@ $(document).ready(function () {
             "render": function (data) {
                 var edit =
                     `
-                <center> 
+                <div class="text-center"> 
                     <a href="" id="btnConfirmLaporanPaud${data["lapEdit"]}"><i class="bi bi-check-circle"></i></a>
-                </center>
+                </div>
 
                 <script>
                     // Confirm
@@ -3136,7 +3136,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`;
             }
         }, {
             "targets": 1,
@@ -3160,7 +3160,7 @@ $(document).ready(function () {
             "targets": 4,
             data: "anggaran",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 5,
@@ -3178,7 +3178,7 @@ $(document).ready(function () {
             "targets": 7,
             data: "t    erpakai",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 8,
@@ -3197,11 +3197,11 @@ $(document).ready(function () {
             data: "lapResi",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                         <a href="#" name="view" data-id="${data}" class="view_data_jasa${data}">
                             <i class="bi bi-images"></i>
                         </a>
-                    </center>
+                    </div>
 
                     <div id="dataModal_jasa${data}" class="modal fade">
                         <div class="modal-dialog">
@@ -3266,9 +3266,9 @@ $(document).ready(function () {
             "render": function (data) {
                 var edit =
                     `
-                <center> 
+                <div class="text-center"> 
                     <a href="" id="btnConfirmLaporanJasa${data["lapEdit"]}"><i class="bi bi-check-circle"></i></a>
-                </center>
+                </div>
 
                 <script>
                     // Confirm
@@ -3516,7 +3516,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`;
             }
         }, {
             "targets": 1,
@@ -3526,9 +3526,9 @@ $(document).ready(function () {
             "render": function (data) {
                 var edit =
                     `
-            <center>
+            <div class="text-center">
                 <a href="" class="text-primary" id="confirmTableIncome${data["verEdit"]}"><i class="bi bi-check-circle" style="font-size: 1.2  rem;"></i></a>
-            </center>
+            </div>
             <script>
                 // confirm table
                 $('#confirmTableIncome${data["verEdit"]}').click(function (e) {
@@ -3571,7 +3571,7 @@ $(document).ready(function () {
             "targets": 3,
             data: "verGedung",
             "render": function (data) {
-                return `<center>Team ${data}</center>`;
+                return `<div class="text-center">Team ${data}</div>`;
             }
         }, {
             "targets": 4,
@@ -3627,7 +3627,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`;
             }
         }, {
             "targets": 1,
@@ -3637,9 +3637,9 @@ $(document).ready(function () {
             "render": function (data) {
                 var edit =
                     `
-            <center>
+            <div class="text-center">
                 <a href="" class="text-primary" id="confirmNonResiTable${data["verEdit"]}"><i class="bi bi-check-circle" style="font-size: 1.2  rem;"></i></a>
-            </center>
+            </div>
             <script>
                 // confirm table
                 $('#confirmNonResiTable${data["verEdit"]}').click(function (e) {

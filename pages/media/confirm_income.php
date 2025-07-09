@@ -41,69 +41,17 @@ if(isset($_POST["id"])){
 
 		$query2     = mysqli_query($conn, "SELECT * FROM data_income WHERE bulan = '$bulan'");
 		$data2      = mysqli_fetch_assoc($query2);
-		$incomeVI  	= $data2["income_VI"];
-		$incomeV  	= $data2["income_V"];
-		$incomeIV  	= $data2["income_IV"];
-		$incomeIII  = $data2["income_III"];
-		$incomeII   = $data2["income_II"];
 		$incomeI    = $data2["income_I"];
+		$incomeII   = $data2["income_II"];
 		$income     = $data2["income_global"];
 
-		if ($gedung == "III") {
-			if ($income > 0 && $incomeIII > 0) {
-				$new_incomeIII 	= $incomeIII - $hasil_income + $d_income;
-				$new_income 	= $income - $hasil_income + $d_income;
-	
-				$upToIncome = mysqli_query($conn, "UPDATE data_income SET 
-							`income_III` = '$new_incomeIII',
-							`income_global` = '$new_income'
-								WHERE bulan = '$bulan'
-							");
-			}
-
-		} else if($gedung == "II") {
+		if($gedung == "II") {
 			if ($income > 0 && $incomeII > 0) {
 				$new_incomeII 	= $incomeII - $hasil_income + $d_income;
 				$new_income 	= $income - $hasil_income + $d_income;
 	
-				$upToIncome = mysqli_query($conn, "UPDATE 2022_data_income SET 
+				$upToIncome = mysqli_query($conn, "UPDATE data_income SET 
 							`income_II` = '$new_incomeII',
-							`income_global` = '$new_income'
-								WHERE bulan = '$bulan'
-							");
-			}
-
-		} else if($gedung == "IV") {
-			if ($income > 0 && $incomeIV > 0) {
-				$new_incomeIV 	= $incomeIV - $hasil_income + $d_income;
-				$new_income 	= $income - $hasil_income + $d_income;
-	
-				$upToIncome = mysqli_query($conn, "UPDATE 2022_data_income SET 
-							`income_IV` = '$new_incomeIV',
-							`income_global` = '$new_income'
-								WHERE bulan = '$bulan'
-							");
-			}
-
-		} else if($gedung == "V") {
-			if ($income > 0 && $incomeV > 0) {
-				$new_incomeV 	= $incomeV - $hasil_income + $d_income;
-				$new_income 	= $income - $hasil_income + $d_income;
-	
-				$upToIncome = mysqli_query($conn, "UPDATE 2022_data_income SET 
-							`income_V` = '$new_incomeV',
-							`income_global` = '$new_income'
-								WHERE bulan = '$bulan'
-							");
-			}
-
-		} else if($gedung == "VI") {
-			if ($income > 0 && $incomeVI > 0) {
-				$new_incomeVI 	= $incomeVI - $hasil_income + $d_income;
-				$new_income 	= $income - $hasil_income + $d_income;
-	
-				$upToIncome = mysqli_query($conn, "UPDATE 2022_data_income SET 
-							`income_VI` = '$new_incomeVI',
 							`income_global` = '$new_income'
 								WHERE bulan = '$bulan'
 							");
@@ -114,7 +62,7 @@ if(isset($_POST["id"])){
 				$new_incomeI 	= $incomeI - $hasil_income + $d_income;
 				$new_income 	= $income - $hasil_income + $d_income;
 	
-				$upToIncome = mysqli_query($conn, "UPDATE 2022_data_income SET 
+				$upToIncome = mysqli_query($conn, "UPDATE data_income SET 
 							`income_I` = '$new_incomeI',
 							`income_global` = '$new_income'
 								WHERE bulan = '$bulan'
@@ -135,9 +83,17 @@ if(isset($_POST["id"])){
 					WHERE 
 					tgl_pemasukan   = '$tanggal' AND gedung = '$gedung' ");
 		
-		// die(var_dump($tIncome));
 	} else {
-		$inpIncome  = mysqli_query($conn, "INSERT INTO income_global VALUES('', '$dataLog[id_pengurus]', 'Media Sosial', '$dataLog[posisi]', '$gedung', '$tanggal', '$d_income', 'Pending')");
+		mysqli_query($conn, "INSERT INTO income_global (id_pengurus, kategori, posisi, gedung, tgl_pemasukan, income, status) VALUES(
+			'{$dataLog[id_pengurus]}', 
+			'Media Sosial', 
+			'{$dataLog[posisi]}', 
+			'$gedung', 
+			'$tanggal', 
+			'$d_income', 
+			'Pending')
+		");
+
 	}
 	
 	$tanggal = date("d-m-Y" , strtotime($tanggal_tf));

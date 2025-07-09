@@ -404,34 +404,6 @@ if (
         $total_ib[$i]   = $ib;
         $hasil_ib       = array_sum($total_ib);
 
-        $ic             = $dP['income_III'];
-        $total_ic[$i]   = $ic;
-        $hasil_ic       = array_sum($total_ic);
-
-        $id             = $dP['income_IV'];
-        $total_id[$i]   = $id;
-        $hasil_id       = array_sum($total_id);
-
-        $ie             = $dP['income_V'];
-        $total_ie[$i]   = $ie;
-        $hasil_ie       = array_sum($total_ie);
-
-        $if             = $dP['income_VI'];
-        $total_if[$i]   = $if;
-        $hasil_if       = array_sum($total_if);
-
-        $ig             = $dP['income_VII'];
-        $total_ig[$i]   = $ig;
-        $hasil_ig       = array_sum($total_ig);
-
-        $ih             = $dP['income_VIII'];
-        $total_ih[$i]   = $ih;
-        $hasil_ih       = array_sum($total_ih);
-
-        $ihi            = $dP['income_IX'];
-        $total_ii[$i]   = $ii;
-        $hasil_ii       = array_sum($total_ii);
-
         $itanpaResi             = $dP['income_tanpaResi'];
         $total_itanpaResi[$i]   = $itanpaResi;
         $hasil_itanpaResi       = array_sum($total_itanpaResi);
@@ -466,33 +438,6 @@ if (
         $ib             = $dP['income_II'];
         $total_ib[$i]   = $ib;
         $hasil_ib       = array_sum($total_ib);
-
-        $ic             = $dP['income_III'];
-        $total_ic[$i]   = $ic;
-        $hasil_ic       = array_sum($total_ic);
-
-        $id             = $dP['income_IV'];
-        $total_id[$i]   = $id;
-        $hasil_id       = array_sum($total_id);
-        
-        $ie             = $dP['income_V'];
-        $total_ie[$i]   = $ie;
-        $hasil_ie       = array_sum($total_ie);
-
-        $if             = $dP['income_VI'];
-        $total_if[$i]   = $if;
-        $hasil_if       = array_sum($total_if);
-
-        $ig             = $dP['income_VII'];
-        $total_ig[$i]   = $ig;
-        $hasil_ig       = array_sum($total_ig);
-
-        $ih             = $dP['income_VIII'];
-        $total_ih[$i]   = $ih;
-        $hasil_ih       = array_sum($total_ih);
-
-        $ihi            = $dP['income_IX'];
-        $total_ii[$i]   = $ii;
 
         $itanpaResi             = $dP['income_tanpaResi'];
         $total_itanpaResi[$i]   = $itanpaResi;
@@ -586,13 +531,6 @@ if (
             "media" => $hasil_iglobal,
             "teamI" => $hasil_ia,
             "teamII" => $hasil_ib,
-            "teamIII" => $hasil_ic,
-            "teamIV" => $hasil_id,
-            "teamV" => $hasil_ie,
-            "teamVI" => $hasil_if,
-            "teamVII" => $hasil_ig,
-            "teamVIII" => $hasil_ih,
-            "teamIX" => $hasil_ii,
             "nonResi" => $hasil_itanpaResi,
             "totalPemasukan" => $totalPemasukan
         ]
@@ -665,13 +603,6 @@ if (
             "media" => $hasil_iglobal,
             "teamI" => $hasil_ia,
             "teamII" => $hasil_ib,
-            "teamIII" => $hasil_ic,
-            "teamIV" => $hasil_id,
-            "teamV" => $hasil_ie,
-            "teamVI" => $hasil_if,
-            "teamVII" => $hasil_ig,
-            "teamVIII" => $hasil_ih,
-            "teamIX" => $hasil_ii,
             "nonResi" => $hasil_itanpaResi,
             "totalPemasukan" => $totalPemasukan
         ]

@@ -130,13 +130,6 @@ function loadHomePage() {
             } else if (readCookie("id_pengurus") == "kepala_income") {
                 let incomeI = new Intl.NumberFormat('en-US').format(data.incomeI)
                 let incomeII = new Intl.NumberFormat('en-US').format(data.incomeII)
-                let incomeIII = new Intl.NumberFormat('en-US').format(data.incomeIII)
-                // let incomeIV = new Intl.NumberFormat('en-US').format(data.incomeIV)
-                let incomeVI = new Intl.NumberFormat('en-US').format(data.incomeVI)
-                let incomeV = new Intl.NumberFormat('en-US').format(data.incomeV)
-                let incomeVII = new Intl.NumberFormat('en-US').format(data.incomeVII)
-                let incomeVIII = new Intl.NumberFormat('en-US').format(data.incomeVIII)
-                let incomeIX = new Intl.NumberFormat('en-US').format(data.incomeIX)
                 let incomeNonResi = new Intl.NumberFormat('en-US').format(data.incomeNonResi)
                 let incomeLalu = new Intl.NumberFormat('en-US').format(data.incomeLalu)
                 let incomeBulan = new Intl.NumberFormat('en-US').format(data.incomeBulan)
@@ -144,19 +137,13 @@ function loadHomePage() {
 
                 document.querySelector(".incomeI").innerHTML = incomeI
                 document.querySelector(".incomeII").innerHTML = incomeII
-                document.querySelector(".incomeIII").innerHTML = incomeIII
-                // document.querySelector(".incomeIV").innerHTML = incomeIV
-                document.querySelector(".incomeIG").innerHTML = incomeV
-                document.querySelector(".incomeIGII").innerHTML = incomeVI
-                document.querySelector(".incomeIGIII").innerHTML = incomeVII
-                document.querySelector(".incomeIGIV").innerHTML = incomeVIII
-                document.querySelector(".incomeFBKI").innerHTML = incomeIX
                 document.querySelector(".iNonResi").innerHTML = incomeNonResi
                 document.querySelector(".iMediaKemarin").innerHTML = incomeLalu
                 document.querySelector(".iMediaIni").innerHTML = `${incomeLalu < incomeBulan ? `${incomeBulan} <i class="bi bi-arrow-up text-success"></i>`:incomeLalu == incomeBulan ? incomeBulan : `${incomeBulan} <i class="bi bi-arrow-down text-danger"></i>`}`
                 document.querySelector(".iKeseluruhan").innerHTML = incomeSeluruh
 
-            } else if (readCookie("id_pengurus") == "manager_facebook") {
+            } else if (readCookie("id_pengurus") == "manager_facebook" ||
+                readCookie("id_pengurus") == "manager_instagram") {
                 // Team 1
                 let incomeKemarin = new Intl.NumberFormat('en-US').format(data.incomeKemarin)
                 let incomeHariIni = new Intl.NumberFormat('en-US').format(data.incomeHariIni)
@@ -167,43 +154,8 @@ function loadHomePage() {
                 let incomeFb2HariIni = new Intl.NumberFormat('en-US').format(data.incomeFb2HariIni)
                 let incomeFb2BulanIni = new Intl.NumberFormat('en-US').format(data.incomeFb2BulanIni)
 
-                // Team 3
-                let incomeFb3Kemarin = new Intl.NumberFormat('en-US').format(data.incomeFb3Kemarin)
-                let incomeFb3HariIni = new Intl.NumberFormat('en-US').format(data.incomeFb3HariIni)
-                let incomeFb3BulanIni = new Intl.NumberFormat('en-US').format(data.incomeFb3BulanIni)
 
-                // team 4
-                // let incomeFb4Kemarin = new Intl.NumberFormat('en-US').format(data.incomeFb4Kemarin)
-                // let incomeFb4HariIni = new Intl.NumberFormat('en-US').format(data.incomeFb4HariIni)
-                // let incomeFb4BulanIni = new Intl.NumberFormat('en-US').format(data.incomeFb4BulanIni)
-
-                // team 5
-                let incomeFb5Kemarin = new Intl.NumberFormat('en-US').format(data.incomeFb5Kemarin)
-                let incomeFb5HariIni = new Intl.NumberFormat('en-US').format(data.incomeFb5HariIni)
-                let incomeFb5BulanIni = new Intl.NumberFormat('en-US').format(data.incomeFb5BulanIni)
-
-                // team 6
-                let incomeFb6Kemarin = new Intl.NumberFormat('en-US').format(data.incomeFb6Kemarin)
-                let incomeFb6HariIni = new Intl.NumberFormat('en-US').format(data.incomeFb6HariIni)
-                let incomeFb6BulanIni = new Intl.NumberFormat('en-US').format(data.incomeFb6BulanIni)
-
-                // team 7
-                let incomeFb7Kemarin = new Intl.NumberFormat('en-US').format(data.incomeFb7Kemarin)
-                let incomeFb7HariIni = new Intl.NumberFormat('en-US').format(data.incomeFb7HariIni)
-                let incomeFb7BulanIni = new Intl.NumberFormat('en-US').format(data.incomeFb7BulanIni)
-
-                // team 8
-                let incomeFb8Kemarin = new Intl.NumberFormat('en-US').format(data.incomeFb8Kemarin)
-                let incomeFb8HariIni = new Intl.NumberFormat('en-US').format(data.incomeFb8HariIni)
-                let incomeFb8BulanIni = new Intl.NumberFormat('en-US').format(data.incomeFb8BulanIni)
-
-                // team 9
-                let incomeFb9Kemarin = new Intl.NumberFormat('en-US').format(data.incomeFb9Kemarin)
-                let incomeFb9HariIni = new Intl.NumberFormat('en-US').format(data.incomeFb9HariIni)
-                let incomeFb9BulanIni = new Intl.NumberFormat('en-US').format(data.incomeFb9BulanIni)
-
-
-                if (readCookie("username") == "fb_saku1") {
+                if (readCookie("username") == "facebook_depok") {
                     let incomeBulanLalu = new Intl.NumberFormat('en-US').format(data.incomeBulanLalu)
                     let incomeTahunIni = new Intl.NumberFormat('en-US').format(data.incomeTahunIni)
 
@@ -222,9 +174,9 @@ function loadHomePage() {
                     document.querySelector(".incomeBulanIni").innerHTML = `${incomeBulanLalu < incomeBulanIni ? `${incomeBulanIni} <i class="bi bi-arrow-up text-success"></i>`: incomeBulanLalu == incomeBulanIni ? `${incomeBulanIni}` : `${incomeBulanIni} <i class="bi bi-arrow-down text-danger"></i>`}`
                     document.querySelector(".incomeTahunIni").innerHTML = incomeTahunIni
 
-                } else if (readCookie("username") == "fb_saku2") {
-                    let incomeBulanLalu = new Intl.NumberFormat('en-US').format(data.incomeBulanLalu)
-                    let incomeTahunIni = new Intl.NumberFormat('en-US').format(data.incomeTahunIni)
+                } else {
+                    let incomeBulanLalu2 = new Intl.NumberFormat('en-US').format(data.incomeBulanLalu2)
+                    let incomeTahunIni2 = new Intl.NumberFormat('en-US').format(data.incomeTahunIni2)
 
                     document.querySelector(".incomeKemarin").innerHTML = incomeFb2Kemarin
                     if (incomeFb2Kemarin == incomeFb2HariIni || incomeFb2HariIni == 0) {
@@ -237,142 +189,10 @@ function loadHomePage() {
                         document.querySelector(".incomeHariIni").innerHTML = `${incomeFb2HariIni}` + `<i class="bi bi-down-up text-danger"></i>`
 
                     }
-                    document.querySelector(".incomeBulanLalu").innerHTML = incomeBulanLalu
-                    document.querySelector(".incomeBulanIni").innerHTML = `${incomeBulanLalu < incomeFb2BulanIni ? `${incomeFb2BulanIni} <i class="bi bi-arrow-up text-success"></i>`: incomeBulanLalu == incomeFb2BulanIni ? `${incomeFb2BulanIni}` : `${incomeFb2BulanIni} <i class="bi bi-arrow-down text-danger"></i>`}`
-                    document.querySelector(".incomeTahunIni").innerHTML = incomeTahunIni
+                    document.querySelector(".incomeBulanLalu").innerHTML = incomeBulanLalu2
+                    document.querySelector(".incomeBulanIni").innerHTML = `${incomeTahunIni2 < incomeFb2BulanIni ? `${incomeFb2BulanIni} <i class="bi bi-arrow-up text-success"></i>`: incomeTahunIni2 == incomeFb2BulanIni ? `${incomeFb2BulanIni}` : `${incomeFb2BulanIni} <i class="bi bi-arrow-down text-danger"></i>`}`
+                    document.querySelector(".incomeTahunIni").innerHTML = incomeTahunIni2
 
-                } else if (readCookie("username") == "ig_saku1") {
-                    let incomeBulanLalu = new Intl.NumberFormat('en-US').format(data.incomeBulanLalu)
-                    let incomeTahunIni = new Intl.NumberFormat('en-US').format(data.incomeTahunIni)
-
-                    document.querySelector(".incomeKemarin").innerHTML = incomeFb3Kemarin
-                    if (incomeFb3Kemarin == incomeFb3HariIni || incomeFb3HariIni == 0) {
-                        document.querySelector(".incomeHariIni").innerHTML = incomeFb3HariIni
-
-                    } else if (incomeFb3HariIni > incomeFb3Kemarin) {
-                        document.querySelector(".incomeHariIni").innerHTML = `${incomeFb3HariIni}` + `<i class="bi bi-arrow-up text-success"></i>`
-
-                    } else {
-                        document.querySelector(".incomeHariIni").innerHTML = `${incomeFb3HariIni}` + `<i class="bi bi-down-up text-danger"></i>`
-
-                    }
-                    document.querySelector(".incomeBulanLalu").innerHTML = incomeBulanLalu
-                    document.querySelector(".incomeBulanIni").innerHTML = `${incomeBulanLalu < incomeFb3BulanIni ? `${incomeFb3BulanIni} <i class="bi bi-arrow-up text-success"></i>`: incomeBulanLalu == incomeFb3BulanIni ? `${incomeFb3BulanIni}` : `${incomeFb3BulanIni} <i class="bi bi-arrow-down text-danger"></i>`}`
-                    document.querySelector(".incomeTahunIni").innerHTML = incomeTahunIni
-
-                } else if (readCookie("username") == "ig_saku2") {
-                    let incomeBulanLalu = new Intl.NumberFormat('en-US').format(data.incomeBulanLalu)
-                    let incomeTahunIni = new Intl.NumberFormat('en-US').format(data.incomeTahunIni)
-
-                    document.querySelector(".incomeKemarin").innerHTML = incomeFb4Kemarin
-                    if (incomeFb4Kemarin == incomeFb4HariIni || incomeFb4HariIni == 0) {
-                        document.querySelector(".incomeHariIni").innerHTML = incomeFb4HariIni
-
-                    } else if (incomeFb4HariIni > incomeFb4Kemarin) {
-                        document.querySelector(".incomeHariIni").innerHTML = `${incomeFb4HariIni}` + `<i class="bi bi-arrow-up text-success"></i>`
-
-                    } else {
-                        document.querySelector(".incomeHariIni").innerHTML = `${incomeFb4HariIni}` + `<i class="bi bi-down-up text-danger"></i>`
-
-                    }
-                    document.querySelector(".incomeBulanLalu").innerHTML = incomeBulanLalu
-                    document.querySelector(".incomeBulanIni").innerHTML = `${incomeBulanLalu < incomeFb4BulanIni ? `${incomeFb4BulanIni} <i class="bi bi-arrow-up text-success"></i>`: incomeBulanLalu == incomeFb4BulanIni ? `${incomeFb4BulanIni}` : `${incomeFb4BulanIni} <i class="bi bi-arrow-down text-danger"></i>`}`
-                    document.querySelector(".incomeTahunIni").innerHTML = incomeTahunIni
-
-                } else if (readCookie("username") == "fb_sembako") {
-                    let incomeBulanLalu = new Intl.NumberFormat('en-US').format(data.incomeBulanLalu)
-                    let incomeTahunIni = new Intl.NumberFormat('en-US').format(data.incomeTahunIni)
-
-                    document.querySelector(".incomeKemarin").innerHTML = incomeFb5Kemarin
-                    if (incomeFb5Kemarin == incomeFb5HariIni || incomeFb5HariIni == 0) {
-                        document.querySelector(".incomeHariIni").innerHTML = incomeFb6HariIni
-
-                    } else if (incomeFb5HariIni > incomeFb5Kemarin) {
-                        document.querySelector(".incomeHariIni").innerHTML = `${incomeFb5HariIni}` + `<i class="bi bi-arrow-up text-success"></i>`
-
-                    } else {
-                        document.querySelector(".incomeHariIni").innerHTML = `${incomeFb5HariIni}` + `<i class="bi bi-down-up text-danger"></i>`
-
-                    }
-                    document.querySelector(".incomeBulanLalu").innerHTML = incomeBulanLalu
-                    document.querySelector(".incomeBulanIni").innerHTML = `${incomeBulanLalu < incomeFb5BulanIni ? `${incomeFb5BulanIni} <i class="bi bi-arrow-up text-success"></i>`: incomeBulanLalu == incomeFb5BulanIni ? `${incomeFb5BulanIni}` : `${incomeFb5BulanIni} <i class="bi bi-arrow-down text-danger"></i>`}`
-                    document.querySelector(".incomeTahunIni").innerHTML = incomeTahunIni
-
-                } else if (readCookie("username") == "ig_sembako") {
-                    let incomeBulanLalu = new Intl.NumberFormat('en-US').format(data.incomeBulanLalu)
-                    let incomeTahunIni = new Intl.NumberFormat('en-US').format(data.incomeTahunIni)
-
-                    document.querySelector(".incomeKemarin").innerHTML = incomeFb6Kemarin
-                    if (incomeFb6Kemarin == incomeFb6HariIni || incomeFb6HariIni == 0) {
-                        document.querySelector(".incomeHariIni").innerHTML = incomeFb6HariIni
-
-                    } else if (incomeFb6HariIni > incomeFb6Kemarin) {
-                        document.querySelector(".incomeHariIni").innerHTML = `${incomeFb6HariIni}` + `<i class="bi bi-arrow-up text-success"></i>`
-
-                    } else {
-                        document.querySelector(".incomeHariIni").innerHTML = `${incomeFb6HariIni}` + `<i class="bi bi-down-up text-danger"></i>`
-
-                    }
-                    document.querySelector(".incomeBulanLalu").innerHTML = incomeBulanLalu
-                    document.querySelector(".incomeBulanIni").innerHTML = `${incomeBulanLalu < incomeFb6BulanIni ? `${incomeFb6BulanIni} <i class="bi bi-arrow-up text-success"></i>`: incomeBulanLalu == incomeFb6BulanIni ? `${incomeFb6BulanIni}` : `${incomeFb6BulanIni} <i class="bi bi-arrow-down text-danger"></i>`}`
-                    document.querySelector(".incomeTahunIni").innerHTML = incomeTahunIni
-
-                } else if (readCookie("username") == "fb_pembangunan") {
-                    let incomeBulanLalu = new Intl.NumberFormat('en-US').format(data.incomeBulanLalu)
-                    let incomeTahunIni = new Intl.NumberFormat('en-US').format(data.incomeTahunIni)
-
-                    document.querySelector(".incomeKemarin").innerHTML = incomeFb7Kemarin
-                    if (incomeFb7Kemarin == incomeFb7HariIni || incomeFb7HariIni == 0) {
-                        document.querySelector(".incomeHariIni").innerHTML = incomeFb7HariIni
-
-                    } else if (incomeFb7HariIni > incomeFb7Kemarin) {
-                        document.querySelector(".incomeHariIni").innerHTML = `${incomeFb7HariIni}` + `<i class="bi bi-arrow-up text-success"></i>`
-
-                    } else {
-                        document.querySelector(".incomeHariIni").innerHTML = `${incomeFb7HariIni}` + `<i class="bi bi-down-up text-danger"></i>`
-
-                    }
-                    document.querySelector(".incomeBulanLalu").innerHTML = incomeBulanLalu
-                    document.querySelector(".incomeBulanIni").innerHTML = `${incomeBulanLalu < incomeFb7BulanIni ? `${incomeFb7BulanIni} <i class="bi bi-arrow-up text-success"></i>`: incomeBulanLalu == incomeFb7BulanIni ? `${incomeFb7BulanIni}` : `${incomeFb7BulanIni} <i class="bi bi-arrow-down text-danger"></i>`}`
-                    document.querySelector(".incomeTahunIni").innerHTML = incomeTahunIni
-
-                } else if (readCookie("username") == "ig_pembangunan") {
-                    let incomeBulanLalu = new Intl.NumberFormat('en-US').format(data.incomeBulanLalu)
-                    let incomeTahunIni = new Intl.NumberFormat('en-US').format(data.incomeTahunIni)
-
-                    document.querySelector(".incomeKemarin").innerHTML = incomeFb8Kemarin
-                    if (incomeFb8Kemarin == incomeFb8HariIni || incomeFb8HariIni == 0) {
-                        document.querySelector(".incomeHariIni").innerHTML = incomeFb8HariIni
-
-                    } else if (incomeFb8HariIni > incomeFb8Kemarin) {
-                        document.querySelector(".incomeHariIni").innerHTML = `${incomeFb8HariIni}` + `<i class="bi bi-arrow-up text-success"></i>`
-
-                    } else {
-                        document.querySelector(".incomeHariIni").innerHTML = `${incomeFb8HariIni}` + `<i class="bi bi-down-up text-danger"></i>`
-
-                    }
-                    document.querySelector(".incomeBulanLalu").innerHTML = incomeBulanLalu
-                    document.querySelector(".incomeBulanIni").innerHTML = `${incomeBulanLalu < incomeFb8BulanIni ? `${incomeFb8BulanIni} <i class="bi bi-arrow-up text-success"></i>`: incomeBulanLalu == incomeFb8BulanIni ? `${incomeFb8BulanIni}` : `${incomeFb8BulanIni} <i class="bi bi-arrow-down text-danger"></i>`}`
-                    document.querySelector(".incomeTahunIni").innerHTML = incomeTahunIni
-
-                } else if (readCookie("username") == "fb_kesehatan") {
-                    let incomeBulanLalu = new Intl.NumberFormat('en-US').format(data.incomeBulanLalu)
-                    let incomeTahunIni = new Intl.NumberFormat('en-US').format(data.incomeTahunIni)
-
-                    document.querySelector(".incomeKemarin").innerHTML = incomeFb9Kemarin
-                    if (incomeFb9Kemarin == incomeFb9HariIni || incomeFb9HariIni == 0) {
-                        document.querySelector(".incomeHariIni").innerHTML = incomeFb9HariIni
-
-                    } else if (incomeFb9HariIni > incomeFb9Kemarin) {
-                        document.querySelector(".incomeHariIni").innerHTML = `${incomeFb9HariIni}` + `<i class="bi bi-arrow-up text-success"></i>`
-
-                    } else {
-                        document.querySelector(".incomeHariIni").innerHTML = `${incomeFb9HariIni}` + `<i class="bi bi-down-up text-danger"></i>`
-
-                    }
-                    document.querySelector(".incomeBulanLalu").innerHTML = incomeBulanLalu
-                    document.querySelector(".incomeBulanIni").innerHTML = `${incomeBulanLalu < incomeFb9BulanIni ? `${incomeFb9BulanIni} <i class="bi bi-arrow-up text-success"></i>`: incomeBulanLalu == incomeFb9BulanIni ? `${incomeFb9BulanIni}` : `${incomeFb9BulanIni} <i class="bi bi-arrow-down text-danger"></i>`}`
-                    document.querySelector(".incomeTahunIni").innerHTML = incomeTahunIni
                 }
 
                 document.querySelector(".income-team-I .incomeHariKemarin").innerHTML = 'Income Kemarin : ' + incomeKemarin
@@ -383,58 +203,18 @@ function loadHomePage() {
                 document.querySelector(".income-team-II .incomeHariIni").innerHTML = 'Income Hari Ini : ' + incomeFb2HariIni
                 document.querySelector(".income-team-II .incomeBulanIni").innerHTML = 'Income Bulan Ini : ' + incomeFb2BulanIni
 
-                document.querySelector(".income-team-III .incomeHariKemarin").innerHTML = 'Income Kemarin : ' + incomeFb3Kemarin
-                document.querySelector(".income-team-III .incomeHariIni").innerHTML = 'Income Hari Ini : ' + incomeFb3HariIni
-                document.querySelector(".income-team-III .incomeBulanIni").innerHTML = 'Income Bulan Ini : ' + incomeFb3BulanIni
-
-                // document.querySelector(".income-team-IV .incomeHariKemarin").innerHTML = 'Income Kemarin : ' + incomeFb4Kemarin
-                // document.querySelector(".income-team-IV .incomeHariIni").innerHTML = 'Income Hari Ini : ' + incomeFb4HariIni
-                // document.querySelector(".income-team-IV .incomeBulanIni").innerHTML = 'Income Bulan Ini : ' + incomeFb4BulanIni
-
-                document.querySelector(".income-team-IG .incomeHariKemarin").innerHTML = 'Income Kemarin : ' + incomeFb5Kemarin
-                document.querySelector(".income-team-IG .incomeHariIni").innerHTML = 'Income Hari Ini : ' + incomeFb5HariIni
-                document.querySelector(".income-team-IG .incomeBulanIni").innerHTML = 'Income Bulan Ini : ' + incomeFb5BulanIni
-
-                document.querySelector(".income-team-IG-II .incomeHariKemarin").innerHTML = 'Income Kemarin : ' + incomeFb6Kemarin
-                document.querySelector(".income-team-IG-II .incomeHariIni").innerHTML = 'Income Hari Ini : ' + incomeFb6HariIni
-                document.querySelector(".income-team-IG-II .incomeBulanIni").innerHTML = 'Income Bulan Ini : ' + incomeFb6BulanIni
-
-                document.querySelector(".income-team-IG-III .incomeHariKemarin").innerHTML = 'Income Kemarin : ' + incomeFb7Kemarin
-                document.querySelector(".income-team-IG-III .incomeHariIni").innerHTML = 'Income Hari Ini : ' + incomeFb7HariIni
-                document.querySelector(".income-team-IG-III .incomeBulanIni").innerHTML = 'Income Bulan Ini : ' + incomeFb7BulanIni
-
-                document.querySelector(".income-team-IG-IV .incomeHariKemarin").innerHTML = 'Income Kemarin : ' + incomeFb8Kemarin
-                document.querySelector(".income-team-IG-IV .incomeHariIni").innerHTML = 'Income Hari Ini : ' + incomeFb8HariIni
-                document.querySelector(".income-team-IG-IV .incomeBulanIni").innerHTML = 'Income Bulan Ini : ' + incomeFb8BulanIni
-
-                document.querySelector(".income-team-FB-KI .incomeHariKemarin").innerHTML = 'Income Kemarin : ' + incomeFb9Kemarin
-                document.querySelector(".income-team-FB-KI .incomeHariIni").innerHTML = 'Income Hari Ini : ' + incomeFb9HariIni
-                document.querySelector(".income-team-FB-KI .incomeBulanIni").innerHTML = 'Income Bulan Ini : ' + incomeFb9BulanIni
             }
 
             if (readCookie("id_pengurus") == "management_keuangan") {
                 let incomeI = new Intl.NumberFormat('en-US').format(data.incomeI)
                 let incomeII = new Intl.NumberFormat('en-US').format(data.incomeII)
-                let incomeIII = new Intl.NumberFormat('en-US').format(data.incomeIII)
-                // let incomeIV = new Intl.NumberFormat('en-US').format(data.incomeIV)
-                let incomeVI = new Intl.NumberFormat('en-US').format(data.incomeVI)
-                let incomeV = new Intl.NumberFormat('en-US').format(data.incomeV)
-                let incomeVII = new Intl.NumberFormat('en-US').format(data.incomeVII)
-                let incomeVIII = new Intl.NumberFormat('en-US').format(data.incomeVIII)
-                let incomeIX = new Intl.NumberFormat('en-US').format(data.incomeIX)
+
                 let incomeNonResi = new Intl.NumberFormat('en-US').format(data.incomeNonResi)
                 let incomeSeluruh = new Intl.NumberFormat('en-US').format(data.incomeSeluruh)
                 let incomeCashback = new Intl.NumberFormat('en-US').format(data.incomeCashback)
 
                 document.querySelector(".incomeI").innerHTML = incomeI
                 document.querySelector(".incomeII").innerHTML = incomeII
-                document.querySelector(".incomeIII").innerHTML = incomeIII
-                // document.querySelector(".incomeIV").innerHTML = incomeIV
-                document.querySelector(".incomeIG").innerHTML = incomeVI
-                document.querySelector(".incomeIGII").innerHTML = incomeV
-                document.querySelector(".incomeIGIII").innerHTML = incomeVII
-                document.querySelector(".incomeIGIV").innerHTML = incomeVIII
-                document.querySelector(".incomeFBKI").innerHTML = incomeIX
                 document.querySelector(".incomeTanpaResi").innerHTML = incomeNonResi
                 document.querySelector(".incomeKeseluruhan").innerHTML = incomeSeluruh
                 document.querySelector(".incomeCashback").innerHTML = incomeCashback
@@ -443,13 +223,6 @@ function loadHomePage() {
             if (readCookie("id_pengurus") == "ketua_yayasan") {
                 let incomeI = new Intl.NumberFormat('en-US').format(data.incomeI)
                 let incomeII = new Intl.NumberFormat('en-US').format(data.incomeII)
-                let incomeIII = new Intl.NumberFormat('en-US').format(data.incomeIII)
-                // let incomeIV = new Intl.NumberFormat('en-US').format(data.incomeIV)
-                let incomeV = new Intl.NumberFormat('en-US').format(data.incomeV)
-                let incomeVI = new Intl.NumberFormat('en-US').format(data.incomeVI)
-                let incomeVII = new Intl.NumberFormat('en-US').format(data.incomeVII)
-                let incomeVIII = new Intl.NumberFormat('en-US').format(data.incomeVIII)
-                let incomeIX = new Intl.NumberFormat('en-US').format(data.incomeIX)
                 let incomeNonResi = new Intl.NumberFormat('en-US').format(data.incomeNonResi)
                 let incomeLalu = new Intl.NumberFormat('en-US').format(data.incomeLalu)
                 let incomeBulan = new Intl.NumberFormat('en-US').format(data.incomeBulan)
@@ -463,34 +236,6 @@ function loadHomePage() {
                 let incomeFBHariIni2 = new Intl.NumberFormat('en-US').format(data.incomeFBHariIni2)
                 let incomeFBBulanIni2 = new Intl.NumberFormat('en-US').format(data.incomeFBBulanIni2)
 
-                let incomeFBKemarin3 = new Intl.NumberFormat('en-US').format(data.incomeFBKemarin3)
-                let incomeFBHariIni3 = new Intl.NumberFormat('en-US').format(data.incomeFBHariIni3)
-                let incomeFBBulanIni3 = new Intl.NumberFormat('en-US').format(data.incomeFBBulanIni3)
-
-                // let incomeFBKemarin4 = new Intl.NumberFormat('en-US').format(data.incomeFBKemarin4)
-                // let incomeFBHariIni4 = new Intl.NumberFormat('en-US').format(data.incomeFBHariIni4)
-                // let incomeFBBulanIni4 = new Intl.NumberFormat('en-US').format(data.incomeFBBulanIni4)
-
-                let incomeFBKemarin5 = new Intl.NumberFormat('en-US').format(data.incomeFBKemarin5)
-                let incomeFBHariIni5 = new Intl.NumberFormat('en-US').format(data.incomeFBHariIni5)
-                let incomeFBBulanIni5 = new Intl.NumberFormat('en-US').format(data.incomeFBBulanIni5)
-
-                let incomeFBKemarin6 = new Intl.NumberFormat('en-US').format(data.incomeFBKemarin6)
-                let incomeFBHariIni6 = new Intl.NumberFormat('en-US').format(data.incomeFBHariIni6)
-                let incomeFBBulanIni6 = new Intl.NumberFormat('en-US').format(data.incomeFBBulanIni6)
-
-                let incomeFBKemarin7 = new Intl.NumberFormat('en-US').format(data.incomeFBKemarin7)
-                let incomeFBHariIni7 = new Intl.NumberFormat('en-US').format(data.incomeFBHariIni7)
-                let incomeFBBulanIni7 = new Intl.NumberFormat('en-US').format(data.incomeFBBulanIni7)
-
-                let incomeFBKemarin8 = new Intl.NumberFormat('en-US').format(data.incomeFBKemarin8)
-                let incomeFBHariIni8 = new Intl.NumberFormat('en-US').format(data.incomeFBHariIni8)
-                let incomeFBBulanIni8 = new Intl.NumberFormat('en-US').format(data.incomeFBBulanIni8)
-
-                let incomeFBKemarin9 = new Intl.NumberFormat('en-US').format(data.incomeFBKemarin9)
-                let incomeFBHariIni9 = new Intl.NumberFormat('en-US').format(data.incomeFBHariIni9)
-                let incomeFBBulanIni9 = new Intl.NumberFormat('en-US').format(data.incomeFBBulanIni9)
-
                 document.querySelector(".income-team-I .incomeHariKemarin").innerHTML = 'Income Kemarin : ' + incomeFBKemarin
                 document.querySelector(".income-team-I .incomeHariIni").innerHTML = 'Income Hari Ini : ' + incomeFBHariIni
                 document.querySelector(".income-team-I .incomeBulanIni").innerHTML = 'Income Bulan Ini : ' + incomeFBBulanIni
@@ -499,54 +244,14 @@ function loadHomePage() {
                 document.querySelector(".income-team-II .incomeHariIni").innerHTML = 'Income Hari Ini : ' + incomeFBHariIni2
                 document.querySelector(".income-team-II .incomeBulanIni").innerHTML = 'Income Bulan Ini : ' + incomeFBBulanIni2
 
-                document.querySelector(".income-team-III .incomeHariKemarin").innerHTML = 'Income Kemarin : ' + incomeFBKemarin3
-                document.querySelector(".income-team-III .incomeHariIni").innerHTML = 'Income Hari Ini : ' + incomeFBHariIni3
-                document.querySelector(".income-team-III .incomeBulanIni").innerHTML = 'Income Bulan Ini : ' + incomeFBBulanIni3
-
-                // document.querySelector(".income-team-IV .incomeHariKemarin").innerHTML = 'Income Kemarin : ' + incomeFBKemarin4
-                // document.querySelector(".income-team-IV .incomeHariIni").innerHTML = 'Income Hari Ini : ' + incomeFBHariIni4
-                // document.querySelector(".income-team-IV .incomeBulanIni").innerHTML = 'Income Bulan Ini : ' + incomeFBBulanIni4
-
-                document.querySelector(".income-team-IG .incomeHariKemarin").innerHTML = 'Income Kemarin : ' + incomeFBKemarin5
-                document.querySelector(".income-team-IG .incomeHariIni").innerHTML = 'Income Hari Ini : ' + incomeFBHariIni5
-                document.querySelector(".income-team-IG .incomeBulanIni").innerHTML = 'Income Bulan Ini : ' + incomeFBBulanIni5
-
-                document.querySelector(".income-team-IG-II .incomeHariKemarin").innerHTML = 'Income Kemarin : ' + incomeFBKemarin6
-                document.querySelector(".income-team-IG-II .incomeHariIni").innerHTML = 'Income Hari Ini : ' + incomeFBHariIni6
-                document.querySelector(".income-team-IG-II .incomeBulanIni").innerHTML = 'Income Bulan Ini : ' + incomeFBBulanIni6
-
-                document.querySelector(".income-team-IG-III .incomeHariKemarin").innerHTML = 'Income Kemarin : ' + incomeFBKemarin7
-                document.querySelector(".income-team-IG-III .incomeHariIni").innerHTML = 'Income Hari Ini : ' + incomeFBHariIni7
-                document.querySelector(".income-team-IG-III .incomeBulanIni").innerHTML = 'Income Bulan Ini : ' + incomeFBBulanIni7
-
-                document.querySelector(".income-team-IG-IV .incomeHariKemarin").innerHTML = 'Income Kemarin : ' + incomeFBKemarin8
-                document.querySelector(".income-team-IG-IV .incomeHariIni").innerHTML = 'Income Hari Ini : ' + incomeFBHariIni8
-                document.querySelector(".income-team-IG-IV .incomeBulanIni").innerHTML = 'Income Bulan Ini : ' + incomeFBBulanIni8
-
-                document.querySelector(".income-team-FB-KI .incomeHariKemarin").innerHTML = 'Income Kemarin : ' + incomeFBKemarin9
-                document.querySelector(".income-team-FB-KI .incomeHariIni").innerHTML = 'Income Hari Ini : ' + incomeFBHariIni9
-                document.querySelector(".income-team-FB-KI .incomeBulanIni").innerHTML = 'Income Bulan Ini : ' + incomeFBBulanIni9
-
                 document.querySelector(".incomeI").innerHTML = incomeI
                 document.querySelector(".incomeII").innerHTML = incomeII
-                document.querySelector(".incomeIII").innerHTML = incomeIII
-                // document.querySelector(".incomeIV").innerHTML = incomeIV
-                document.querySelector(".incomeIG").innerHTML = incomeV
-                document.querySelector(".incomeIGII").innerHTML = incomeVI
-                document.querySelector(".incomeIGIII").innerHTML = incomeVII
-                document.querySelector(".incomeIGIV").innerHTML = incomeVIII
-                document.querySelector(".incomeFBKI").innerHTML = incomeIX
                 document.querySelector(".iNonResi").innerHTML = incomeNonResi
                 document.querySelector(".iMediaKemarin").innerHTML = incomeLalu
                 document.querySelector(".iMediaKemarin").innerHTML = incomeLalu
                 document.querySelector(".iMediaIni").innerHTML = `${incomeLalu < incomeBulan ? `${incomeBulan} <i class="bi bi-arrow-up text-success"></i>`:`${incomeBulan} <i class="bi bi-arrow-down text-danger"></i>`}`
                 document.querySelector(".iKeseluruhan").innerHTML = incomeSeluruh
             }
-            let online = new Intl.NumberFormat('en-US').format(data.online)
-            const onlineNumber = document.querySelectorAll(".online-number")
-            onlineNumber.forEach(userOnline => {
-                userOnline.innerHTML = `(${online})`
-            });
         }
     });
 }

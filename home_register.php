@@ -44,7 +44,7 @@ if ($type == "cekUser") {
             '$posisi', 
             '$ip', 
             '$date', 
-            '{$nama} Telah Membuat kata sandi baru dengan lupa kata sandi')
+            '$nama Telah Membuat kata sandi baru dengan lupa kata sandi')
         ");
 
         echo '0';

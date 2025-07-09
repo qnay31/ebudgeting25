@@ -43,13 +43,14 @@ if($num === 1 ) {
         WHERE id = '$id'";
         $hasil = mysqli_query($conn,$sql);
 
+        $tanggal = date("d-m-Y" , strtotime($tanggalName));
         mysqli_query($conn, 
         "INSERT INTO log_aktivity (nama, posisi, ip, tanggal, aktivitas) VALUES (
             '{$dataLog[nama]}', 
             '{$dataLog[posisi]}', 
             '$ip', 
             '$date', 
-            '{$dataLog[nama]} Bagian {$dataLog[posisi]} Telah Mengubah Data Income Media Sosialnya')
+            '{$dataLog[nama]} Bagian {$dataLog[posisi]} Telah Mengubah Data Income Media di tanggal $tanggal atas nama donatur $donaturName')
         ");
     }
     

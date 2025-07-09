@@ -28,7 +28,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -101,11 +101,11 @@ $(document).ready(function () {
             data: "lapResi",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                         <a href="#" name="view" data-id="${data}" class="view_data_program${data}">
                             <i class="bi bi-images"></i>
                         </a>
-                    </center>
+                    </div>
                 
                     <div id="dataModal_program${data}" class="modal fade">
                         <div class="modal-dialog">
@@ -292,7 +292,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -359,11 +359,11 @@ $(document).ready(function () {
             data: "lapResi",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                         <a href="#" name="view" data-id="${data}" class="view_data_logistik${data}">
                             <i class="bi bi-images"></i>
                         </a>
-                    </center>
+                    </di>
                 
                     <div id="dataModal_logistik${data}" class="modal fade">
                         <div class="modal-dialog">
@@ -550,7 +550,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -574,7 +574,7 @@ $(document).ready(function () {
             "targets": 4,
             data: "lapQtyAnggaran",
             "render": function (data) {
-                return `${data == 0 ? `<center>-</center>`:`<center>${data} Pcs</center>`}`;
+                return `${data == 0 ? `<div class="text-center">-</div>`:`<div class="text-center">${data} Pcs</div>`}`;
             }
         }, {
             "targets": 5,
@@ -604,7 +604,7 @@ $(document).ready(function () {
             "targets": 9,
             data: "lapQtyTerpakai",
             "render": function (data) {
-                return `${data == 0 ? `<center>-</center>`:`<center>${data} Pcs</center>`}`;
+                return `${data == 0 ? `<div class="text-center">-</div>`:`<div class="text-center">${data} Pcs</div>`}`;
             }
         }, {
             "targets": 10,
@@ -635,11 +635,11 @@ $(document).ready(function () {
             data: "lapResi",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                         <a href="#" name="view" data-id="${data}" class="view_data_aset${data}">
                             <i class="bi bi-images"></i>
                         </a>
-                    </center>
+                    </div>
                 
                     <div id="dataModal_aset${data}" class="modal fade">
                         <div class="modal-dialog">
@@ -826,7 +826,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -893,11 +893,11 @@ $(document).ready(function () {
             data: "lapResi",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                         <a href="#" name="view" data-id="${data}" class="view_data_uang_makan${data}">
                             <i class="bi bi-images"></i>
                         </a>
-                    </center>
+                    </div>
                 
                     <div id="dataModal_uang_makan${data}" class="modal fade">
                         <div class="modal-dialog">
@@ -1084,7 +1084,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -1151,11 +1151,11 @@ $(document).ready(function () {
             data: "lapResi",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                         <a href="#" name="view" data-id="${data}" class="view_data_gaji${data}">
                             <i class="bi bi-images"></i>
                         </a>
-                    </center>
+                    </div>
                 
                     <div id="dataModal_gaji${data}" class="modal fade">
                         <div class="modal-dialog">
@@ -1342,7 +1342,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -1409,11 +1409,11 @@ $(document).ready(function () {
             data: "lapResi",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                         <a href="#" name="view" data-id="${data}" class="view_data_lainnya${data}">
                             <i class="bi bi-images"></i>
                         </a>
-                    </center>
+                    </div>
                 
                     <div id="dataModal_lainnya${data}" class="modal fade">
                         <div class="modal-dialog">
@@ -1600,7 +1600,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -1667,11 +1667,11 @@ $(document).ready(function () {
             data: "lapResi",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                         <a href="#" name="view" data-id="${data}" class="view_data_maintenance${data}">
                             <i class="bi bi-images"></i>
                         </a>
-                    </center>
+                    </div>
                 
                     <div id="dataModal_maintenance${data}" class="modal fade">
                         <div class="modal-dialog">
@@ -1858,7 +1858,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -1925,11 +1925,11 @@ $(document).ready(function () {
             data: "lapResi",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                         <a href="#" name="view" data-id="${data}" class="view_data_operasional${data}">
                             <i class="bi bi-images"></i>
                         </a>
-                    </center>
+                    </div>
                 
                     <div id="dataModal_operasional${data}" class="modal fade">
                         <div class="modal-dialog">
@@ -2116,7 +2116,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -2183,11 +2183,11 @@ $(document).ready(function () {
             data: "lapResi",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                         <a href="#" name="view" data-id="${data}" class="view_data_paud${data}">
                             <i class="bi bi-images"></i>
                         </a>
-                    </center>
+                    </div>
                 
                     <div id="dataModal_paud${data}" class="modal fade">
                         <div class="modal-dialog">
@@ -2374,7 +2374,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -2441,11 +2441,11 @@ $(document).ready(function () {
             data: "lapResi",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                         <a href="#" name="view" data-id="${data}" class="view_data_jasa${data}">
                             <i class="bi bi-images"></i>
                         </a>
-                    </center>
+                    </div>
                 
                     <div id="dataModal_jasa${data}" class="modal fade">
                         <div class="modal-dialog">
@@ -2727,7 +2727,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -2739,7 +2739,7 @@ $(document).ready(function () {
             "targets": 2,
             data: "lapGedung",
             "render": function (data) {
-                return `<center>Team ${data}</center>`;
+                return `<div class="text-center">Team ${data}</div>`;
             }
         }, {
             "targets": 3,
@@ -2921,7 +2921,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -2975,7 +2975,7 @@ $(document).ready(function () {
             "targets": 9,
             data: "suksesTeam",
             "render": function (data) {
-                return `<center>Team ${data}</center>`
+                return `<div class="text-center">Team ${data}</div>`
             }
         }, {
             searchPanes: {
@@ -3098,7 +3098,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -3243,7 +3243,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -3578,7 +3578,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,

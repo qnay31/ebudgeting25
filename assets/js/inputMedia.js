@@ -531,7 +531,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`;
                 }
             }, {
                 "targets": 1,
@@ -551,12 +551,12 @@ $(document).ready(function () {
                     var mm = String(today.getMonth() + 1).padStart(2, '0');
                     var edit =
                         `
-                <center>  
+                <div class="text-center">  
                 ${newMonth < mm ? 
                     `<a href="#"" data-bs-toggle="modal" data-bs-target="#VerifEditIncome${data["verEdit"]}"><i class="bi bi-pencil"></i></a>` :
                     `<a href="" id="btnConfirm${data["verEdit"]}"><i class="bi bi-check-circle" style="font-size: 1.2rem;"></i></a>`} | 
                     <a href="" class="text-danger" id="btnCancelIncome${data["verEdit"]}"><i class="bi bi-x-circle" style="font-size: 1.2rem;"></i></a>
-                </center>
+                </div>
 
                 <!-- Modal -->
                 <div class="modal fade" id="VerifEditIncome${data["verEdit"]}" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="modalLabel"    aria-hidden="true">
@@ -576,7 +576,7 @@ $(document).ready(function () {
                                     </div>
 
                                     <div class="form-floating mb-2">
-                                        <input type="text" class="form-control" value="${data["verDonatur"]}" readonly style="text-transform: capitalize">
+                                        <input type="text" class="form-control" value="${data["verDonatur"]}" id="floatingInputDonatur" readonly style="text-transform: capitalize">
                                         <label for="floatingInputDonatur">Nama Donatur</label>
                                         <span class="alertDonatur text-danger"></span>
                                     </div>
@@ -588,19 +588,19 @@ $(document).ready(function () {
                                     </div>
 
                                     <div class="form-floating mb-2">
-                                        <input type="time" class="form-control" value="${jam}" readonly>
+                                        <input type="time" class="form-control" value="${jam}" id="floatingInputJam" readonly>
                                         <label for="floatingInputJam">Jam Transfer</label>
                                         <span class="alertJam text-danger"></span>
                                     </div>
 
                                     <div class="form-floating mb-2">
-                                        <input type="text" class="form-control" value="${data["verBank"]}" readonly>
-                                        <label for="floatingInputDonatur">Via Bank</label>
+                                        <input type="text" class="form-control" value="${data["verBank"]}" id="floatingInputBank" readonly>
+                                        <label for="floatingInputBank">Via Bank</label>
                                         <span class="alertDonatur text-danger"></span>
                                     </div>
 
                                     <div class="form-floating mb-2">
-                                        <input type="text" class="form-control rupiah" value="${data["verTransfer"]}"  readonly>
+                                        <input type="text" class="form-control rupiah" value="${data["verTransfer"]}" id="floatingInputTransfer"  readonly>
                                         <label for="floatingInputTransfer">Jumlah Transfer</label>
                                     </div>
 
@@ -849,11 +849,11 @@ $(document).ready(function () {
                 },
                 "render": function (data) {
                     var image =
-                        `<center>
-                        ${data["verResi"] == "" ? `-` : `<a href="#" name="view" data-id="${data["verEdit"]}" class="view_data_resi${data["verEdit"]}">
-                        <i class="bi bi-images"></i>
-                    </a>` }
-                    </center>
+                        `<div class="text-center">
+                            ${data["verResi"] == "" ? `-` : `<a href="#" name="view" data-id="${data["verEdit"]}" class="view_data_resi${data["verEdit"]}">
+                            <i class="bi bi-images"></i>
+                        </a>` }
+                    </div>
                 
                     <div id="dataModal_resi${data["verEdit"]}" class="modal fade">
                         <div class="modal-dialog">
@@ -902,7 +902,7 @@ $(document).ready(function () {
                 "targets": 11,
                 data: "verTeam",
                 "render": function (data) {
-                    return `<center>Team ${data}</center>`
+                    return `<div class="text-center">Team ${data}</div>`
                 }
             }]
         });
@@ -926,7 +926,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -941,10 +941,10 @@ $(document).ready(function () {
                     var newDate = `${year}${month}${day}`
                     var edit =
                         `
-                <center>
+                <div class="text-center">
                     <a href="#"" data-bs-toggle="modal" data-bs-target="#editNonResi${data["verEdit"]}"><i class="bi bi-pencil"></i></a> | 
                     <a href="" class="text-danger" id="btnDeleteNonResi${data["verEdit"]}"><i class="bi bi-x-circle"></i></a>
-                </center>
+                </div>
 
                 <!-- Modal -->
                 <div class="modal fade" id="editNonResi${data["verEdit"]}" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="modalLabel" aria-hidden="true">
@@ -1023,9 +1023,8 @@ $(document).ready(function () {
                                         showConfirmButton: false,
                                         timer: 1500
                                     })
-                                    $('.incomeTanpaResi').one("click", function () {
-                                        $("#verifikasiNonResi").DataTable().ajax.reload()
-                                    });
+
+                                    $("#verifikasiNonResi").DataTable().ajax.reload()
                                 }
                             });
                         } else {
@@ -1188,7 +1187,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -1206,10 +1205,10 @@ $(document).ready(function () {
 
                     var edit =
                         `
-                <center>
+                <div class="text-center">
                     ${data["verStatus"] == "Pending" ? `<a href="#"" data-bs-toggle="modal" data-bs-target="#income${data["verEdit"]}"><i class="bi bi-pencil"></i></a> |` : ``}
                     <a href="" id="btnDeleteIncome${data["verEdit"]}"><i class="bi bi-trash"></i></a>
-                </center>
+                </div>
 
                 <!-- Modal -->
                 <div class="modal fade" id="income${data["verEdit"]}" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="modalLabel"    aria-hidden="true">
@@ -1222,9 +1221,9 @@ $(document).ready(function () {
                             <div class="modal-body">
                                 <form action="" method="post" class="edit-income${data["verEdit"]}">
                                     <div class="input-group mb-2">
-                                        <span class="input-group-text" id="basic-addon1"><b>Nama Akun</b></span>
+                                        <label class="input-group-text" for="namaAkun"><b>Nama Akun</b></label>
                                         <input type="hidden" name="id" value="${data["verEdit"]}">
-                                        <input type="text" class="form-control" value="${data["verAkun"]}" readonly>
+                                        <input type="text" class="form-control" id="namaAkun" value="${data["verAkun"]}" readonly>
                                     </div>
 
                                     <div class="form-floating mb-2">
@@ -1246,7 +1245,7 @@ $(document).ready(function () {
                                     </div>
 
                                     <div class="form-floating mb-2">
-                                        <select class="form-select" name="bank" aria-label="Default select example">
+                                        <select class="form-select" name="bank" id="input-edit-bank" aria-label="Default select example">
                                             <option selected value="${data["verBank"]}">- ${data["verBank"]} -</option>
                                             <option value="BRI">Bank BRI</option>
                                             <option value="BNI">Bank BNI</option>
@@ -1261,7 +1260,7 @@ $(document).ready(function () {
                                             <option value="Pulsa">Pulsa</option>
                                             <option value="Uang Cash">Uang Cash</option>
                                         </select>
-                                        <label for="floatingSelect">Pilih Bank</label>
+                                        <label for="input-edit-bank">Pilih Bank</label>
                                         <span class="alertBank text-danger"></span>
                                     </div>
 
@@ -1480,7 +1479,7 @@ $(document).ready(function () {
                 "targets": 2,
                 data: "verKategori",
                 "render": function (data) {
-                    return "<center>" + data + "</center>";
+                    return `<div class="text-center">` + data + `</div>`;
                 }
             }, {
                 "targets": 3,
@@ -1529,11 +1528,11 @@ $(document).ready(function () {
                 },
                 "render": function (data) {
                     var image =
-                        `<center>
+                        `<div class="text-center">
                         <a href="#" name="view" data-id="${data["verEdit"]}" class="view_data_resi${data["verEdit"]}">
                             <i class="bi bi-images"></i>
                         </a>
-                    </center>
+                    </div>
                 
                     <div id="dataModal_resi${data["verEdit"]}" class="modal fade">
                         <div class="modal-dialog">
@@ -2040,7 +2039,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -2062,10 +2061,10 @@ $(document).ready(function () {
                     today = `${yyyy}-${mm}-${dd}`
                     var edit =
                         `
-                    <center>
+                    <div class="text-center">
                         <a href="#"" data-bs-toggle="modal" data-bs-target="#lapAkun${data["lapId"]}"><i class="bi bi-pencil"></i></a> | 
                         <a href="" id="btnDeleteLapAkun${data["lapId"]}"><i class="bi bi-trash"></i></a>
-                    </center>
+                    </div>
     
                     <!-- Modal -->
                     <div class="modal fade" id="lapAkun${data["lapId"]}" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="modalLabel"    aria-hidden="true">
@@ -2473,61 +2472,61 @@ $(document).ready(function () {
                 "targets": 3,
                 data: "lapLaporan",
                 "render": function (data) {
-                    return `<center>${data}</center>`;
+                    return `<div class="text-center">${data}</div>`;
                 }
             }, {
                 "targets": 4,
                 data: "lapTeman",
                 "render": function (data) {
-                    return `<center>${data}</center>`
+                    return `<div class="text-center">${data}</div>`
                 }
             }, {
                 "targets": 5,
                 data: "lapAdd",
                 "render": function (data) {
-                    return `<center>${data}</center>`
+                    return `<div class="text-center">${data}</div>`
                 }
             }, {
                 "targets": 6,
                 data: "lapTemanBaru",
                 "render": function (data) {
-                    return `<center>${data}</center>`
+                    return `<div class="text-center">${data}</div>`
                 }
             }, {
                 "targets": 7,
                 data: "lapTemanHapus",
                 "render": function (data) {
-                    return `<center>${data}</center>`
+                    return `<div class="text-center">${data}</div>`
                 }
             }, {
                 "targets": 8,
                 data: "lapSerangan",
                 "render": function (data) {
-                    return `<center>${data}</center>`
+                    return `<div class="text-center">${data}</div>`
                 }
             }, {
                 "targets": 9,
                 data: "lapRespon",
                 "render": function (data) {
-                    return `<center>${data}</center>`
+                    return `<div class="text-center">${data}</div>`
                 }
             }, {
                 "targets": 10,
                 data: "lapNoRespon",
                 "render": function (data) {
-                    return `<center>${data}</center>`
+                    return `<div class="text-center">${data}</div>`
                 }
             }, {
                 "targets": 11,
                 data: "lapDonatur",
                 "render": function (data) {
-                    return `<center>${data}</center>`
+                    return `<div class="text-center">${data}</div>`
                 }
             }, {
                 "targets": 12,
                 data: "lapIncome",
                 "render": function (data) {
-                    return `<center>${data}</center>`
+                    return `<div class="text-center">${data}</div>`
                 }
             }]
         });
@@ -2554,7 +2553,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -2576,10 +2575,10 @@ $(document).ready(function () {
                     today = `${yyyy}-${mm}-${dd}`
                     var edit =
                         `
-                    <center>
+                    <div class="text-center">
                         <a href="#"" data-bs-toggle="modal" data-bs-target="#lapAkun${data["lapId"]}"><i class="bi bi-pencil"></i></a> | 
                         <a href="" id="btnDeleteLapAkun${data["lapId"]}"><i class="bi bi-trash"></i></a>
-                    </center>
+                    </div>
     
                     <!-- Modal -->
                     <div class="modal fade" id="lapAkun${data["lapId"]}" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="modalLabel"    aria-hidden="true">
@@ -2994,73 +2993,73 @@ $(document).ready(function () {
                 "targets": 3,
                 data: "lapLaporan",
                 "render": function (data) {
-                    return `<center>${data}</center>`;
+                    return `<div class="text-center">${data}</div>`;
                 }
             }, {
                 "targets": 4,
                 data: "lapPengikut",
                 "render": function (data) {
-                    return `<center>${data}</center>`
+                    return `<div class="text-center">${data}</div>`
                 }
             }, {
                 "targets": 5,
                 data: "lapMengikuti",
                 "render": function (data) {
-                    return `<center>${data}</center>`
+                    return `<div class="text-center">${data}</div>`
                 }
             }, {
                 "targets": 6,
                 data: "lapIkutBaru",
                 "render": function (data) {
-                    return `<center>${data}</center>`
+                    return `<div class="text-center">${data}</div>`
                 }
             }, {
                 "targets": 7,
                 data: "lapIkutiBaru",
                 "render": function (data) {
-                    return `<center>${data}</center>`
+                    return `<div class="text-center">${data}</div>`
                 }
             }, {
                 "targets": 8,
                 data: "lapIkutHapus",
                 "render": function (data) {
-                    return `<center>${data}</center>`
+                    return `<div class="text-center">${data}</div>`
                 }
             }, {
                 "targets": 9,
                 data: "lapIkutiHapus",
                 "render": function (data) {
-                    return `<center>${data}</center>`
+                    return `<div class="text-center">${data}</div>`
                 }
             }, {
                 "targets": 10,
                 data: "lapSerangan",
                 "render": function (data) {
-                    return `<center>${data}</center>`
+                    return `<div class="text-center">${data}</div>`
                 }
             }, {
                 "targets": 11,
                 data: "lapRespon",
                 "render": function (data) {
-                    return `<center>${data}</center>`
+                    return `<div class="text-center">${data}</div>`
                 }
             }, {
                 "targets": 12,
                 data: "lapNoRespon",
                 "render": function (data) {
-                    return `<center>${data}</center>`
+                    return `<div class="text-center">${data}</div>`
                 }
             }, {
                 "targets": 13,
                 data: "lapDonatur",
                 "render": function (data) {
-                    return `<center>${data}</center>`
+                    return `<div class="text-center">${data}</div>`
                 }
             }, {
                 "targets": 14,
                 data: "lapIncome",
                 "render": function (data) {
-                    return `<center>${data}</center>`
+                    return `<div class="text-center">${data}</div>`
                 }
             }]
         });
@@ -3106,18 +3105,18 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
             data: "suksesEdit",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                             <a href="#" name="view" data-id="${data}" class="btn btn-primary text-white view_data_income${data}">
                                 Simpan resi
                             </a>
-                        </center>
+                        </div>
                     
                         <div id="dataModal_income${data}" class="modal fade">
                             <div class="modal-dialog">
@@ -3335,7 +3334,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -3345,11 +3344,11 @@ $(document).ready(function () {
                 "render": function (data) {
                     var edit =
                         `
-                <center>${data["verStatus"] == "Pending" ? 
+                <div class="text-center">${data["verStatus"] == "Pending" ? 
                     `
                         <a href="" class="text-danger" id="confirmIncomeMedia${data["verEdit"]}"><i class="bi bi-send-check" style="font-size: 1.2  rem; color: cornflowerblue;"></i></a>
                     ` : `-`}
-                </center>
+                </div>
                 <script>
                     // confirm table
                     $('#confirmIncomeMedia${data["verEdit"]}').click(function (e) {
@@ -3392,7 +3391,7 @@ $(document).ready(function () {
                 "targets": 3,
                 data: "verGedung",
                 "render": function (data) {
-                    return `<center>Team ${data}</center>`;
+                    return `<div class="text-center">Team ${data}</div>`;
                 }
             }, {
                 "targets": 4,
@@ -3475,7 +3474,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -3485,9 +3484,9 @@ $(document).ready(function () {
                 "render": function (data) {
                     var edit =
                         `
-                <center>
+                <div class="text-center">
                     <a href="" class="text-danger" id="deleteIncomeCheck${data["suksesEdit"]}"><i class="bi bi-trash" style="font-size: 1.2  rem; color: red;"></i></a>
-                </center>
+                </div>
                 <script>
                     // confirm table
                     $('#deleteIncomeCheck${data["suksesEdit"]}').click(function (e) {

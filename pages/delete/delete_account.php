@@ -20,6 +20,17 @@ session_start();
         } else {
             if ($dataLog["id_pengurus"] == "sosial_media") {
                 $inputAkun  = $_POST["deleteAkun"];
+                
+                mysqli_query($conn, 
+                    "INSERT INTO log_aktivity (nama, posisi, ip, tanggal, aktivitas) VALUES (
+                    '{$dataLog[nama]}', 
+                    '{$dataLog[posisi]}', 
+                    '$ip', 
+                    '$date', 
+                    '{$dataLog[nama]} Bagian {$dataLog[posisi]} baru saja menghapus akun $inputAkun dari halaman ebudgetingnya ')
+                    
+                ");
+
                 mysqli_query($conn, "DELETE FROM `data_akun` WHERE nama_akun = '$inputAkun' ");
 
             } else {

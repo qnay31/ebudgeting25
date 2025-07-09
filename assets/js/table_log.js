@@ -19,7 +19,7 @@ if (readCookie("id_pengurus") == "ketua_yayasan") {
             columnDefs: [{
                 "targets": 0,
                 "render": function (data, type, row, meta) {
-                    return `<center>${meta.row + meta.settings._iDisplayStart + 1}</center>`;
+                    return `<div class="text-center">${meta.row + meta.settings._iDisplayStart + 1}</div>`;
                 }
             }, {
                 "targets": 1,
@@ -89,7 +89,7 @@ if (readCookie("id_pengurus") == "ketua_yayasan") {
             columnDefs: [{
                 "targets": 0,
                 "render": function (data, type, row, meta) {
-                    return `<center>${meta.row + meta.settings._iDisplayStart + 1}</center>`;
+                    return `<div class="text-center">${meta.row + meta.settings._iDisplayStart + 1}</div>`;
                 }
             }, {
                 "targets": 1,
@@ -98,9 +98,9 @@ if (readCookie("id_pengurus") == "ketua_yayasan") {
 
                     var edit =
                         `
-                    <center>
+                    <div class="text-center">
                         <a href="" id="btnDeleteLog${data}"><i class="bi bi-trash"></i></a>
-                    </center>
+                    </div>
     
                     <script>
                         // Delete Table

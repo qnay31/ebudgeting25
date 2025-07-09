@@ -1,16 +1,14 @@
 <div class="password mb-2">
-    <label for="basic-url" toggle="#password-field" class="show-password toggle-password"><span
-            class="showMe">Tampilkan</span>
-        Password</label>
+    <span toggle="#password-field" class="show-password toggle-password"><span class="showMe">Tampilkan</span>
+        Password</span>
     <label class="sr-only" for="password-field">Password</label>
     <input name="password" type="password" class="form-control signup-password" id="password-field"
         placeholder="Password" maxlength='32' autocomplete="off">
     <p class="alertPassword text-danger"></p>
 </div>
 <div class="password mb-2">
-    <label for="basic-url" toggle="#password-field2" class="show-password toggle-password"><span
-            class="showMe2">Tampilkan</span>
-        Password</label>
+    <span toggle="#password-field2" class="show-password toggle-password"><span class="showMe2">Tampilkan</span>
+        Password</span>
     <label class="sr-only" for="password-field2">Password</label>
     <input id="password-field2" name="confirmPassword" type="password" class="form-control signup-password"
         placeholder="Konfirmasi Password" maxlength='32' autocomplete="off">

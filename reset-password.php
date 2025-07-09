@@ -40,7 +40,7 @@
                             <div class="confirmUsername mb-3">
                                 <label class="sr-only" for="reset-username">Username</label>
                                 <input id="reset-username" name="username" type="text" class="form-control cek-username"
-                                    placeholder="Username">
+                                    placeholder="Username" autocomplete="username">
                                 <p class="alertUsername text-danger"></p>
                             </div>
 

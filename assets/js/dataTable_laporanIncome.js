@@ -29,7 +29,7 @@ $(document).ready(function () {
       },
       rowGroup: {
         // Uses the 'row group' plugin
-        dataSrc: "suksesAkun",
+        dataSrc: Capitalize("suksesAkun"),
         startRender: null,
         endRender: function (rows, group) {
           var collapsed = !!collapsedGroups[group];
@@ -78,7 +78,7 @@ $(document).ready(function () {
           targets: 0,
           render: function (_data, _type, _row, meta) {
             var no = meta.row + meta.settings._iDisplayStart + 1;
-            return "<center>" + no + "</center>";
+            return `<div class="text-center">` + no + `</div>`
           },
         },
         {
@@ -289,7 +289,7 @@ $(document).ready(function () {
           targets: 0,
           render: function (_data, _type, _row, meta) {
             var no = meta.row + meta.settings._iDisplayStart + 1;
-            return "<center>" + no + "</center>";
+            return `<div class="text-center">` + no + `</div>`
           },
         },
         {
@@ -352,7 +352,7 @@ $(document).ready(function () {
           targets: 9,
           data: "suksesTeam",
           render: function (data) {
-            return `<center>Team ${data}</center>`;
+            return `<div class="text-center">Team ${data}</div>`;
           },
         },
         {
@@ -428,7 +428,7 @@ $(document).ready(function () {
 
   $("#laporanIncome tbody").on("click", "tr.group-end", function () {
     var name = $(this).data("name");
-    console.log(name);
+    // console.log(name);
     collapsedGroups[name] = !collapsedGroups[name];
     table.draw(false);
   });
@@ -465,7 +465,7 @@ $(document).ready(function () {
         targets: 0,
         render: function (_data, _type, _row, meta) {
           var no = meta.row + meta.settings._iDisplayStart + 1;
-          return "<center>" + no + "</center>";
+          return `<div class="text-center">` + no + `</div>`
         },
       },
       {
@@ -788,7 +788,7 @@ $(document).ready(function () {
         targets: 0,
         render: function (_data, _type, _row, meta) {
           var no = meta.row + meta.settings._iDisplayStart + 1;
-          return "<center>" + no + "</center>";
+          return `<div class="text-center">` + no + `</div>`
         },
       },
       {

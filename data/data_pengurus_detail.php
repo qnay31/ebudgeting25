@@ -150,15 +150,8 @@ $qIncome = mysqli_query($conn, "SELECT nama_akun, SUM(jumlah_tf) AS total_tf FRO
                             <?php while ($dAkun = $detail_query_akun->fetch_array()) { ?>
                             <div class="item-data">
                                 <?= $number++; ?>. <?= $dAkun["nama_akun"]; ?> - <?= $dAkun["kategori"]; ?> - Team
-                                <?= $dAkun["team"] == "I" ? "FB Uang Saku I" : 
-                                    ($dAkun["team"] == "II" ? "FB Uang Saku II" : 
-                                    ($dAkun["team"] == "III" ? "IG Uang Saku I" : 
-                                    ($dAkun["team"] == "IV" ? "IG Uang Saku II" : 
-                                    ($dAkun["team"] == "V" ? "FB Sembako" : 
-                                    ($dAkun["team"] == "VI" ? "IG Sembako" : 
-                                    ($dAkun["team"] == "VII" ? "FB Pembangunan" : 
-                                    ($dAkun["team"] == "VIII" ? "IG Pembangunan" : 
-                                    ($dAkun["team"] == "IX" ? "FB Kesehatan" : "Tidak Ada Team")))))))) ?>
+                                <?= $dAkun["team"] == "I" ? "Facebook" : 
+                                    ($dAkun["team"] == "II" ? "Instagram"  : "Tidak Ada Team") ?>
                             </div>
                             <?php } ?>
                         </div>

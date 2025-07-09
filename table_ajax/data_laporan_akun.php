@@ -14,34 +14,14 @@ if ($_COOKIE["id_pengurus"] == "ketua_yayasan") {
     $request = $_GET['media'];
         $where = "kategori = '$request' ORDER BY tgl_laporan DESC ";
     
-} else if($_COOKIE["id_pengurus"] == "manager_facebook") {
+} else if($_COOKIE["id_pengurus"] == "manager_facebook" || $_COOKIE["id_pengurus"] == "manager_instagram") {
     $request = $_GET['media'];
-    if ($_COOKIE["username"] == "fb_saku1") {
+    if ($_COOKIE["username"] == "facebook_depok") {
         $where = "team = 'I' AND kategori = '$request' ORDER BY tgl_laporan DESC  ";
     
-    } elseif ($_COOKIE["username"] == "fb_saku2") {
+    } else {
         $where = "team = 'II' AND kategori = '$request' ORDER BY tgl_laporan DESC  ";
     
-    } elseif ($_COOKIE["username"] == "ig_saku1") {
-        $where = "team = 'III' AND kategori = '$request' ORDER BY tgl_laporan DESC  ";
-    
-    } elseif ($_COOKIE["username"] == "ig_saku2") {
-        $where = "team = 'IV' AND kategori = '$request' ORDER BY tgl_laporan DESC  ";
-    
-    } elseif ($_COOKIE["username"] == "fb_sembako") {
-        $where = "team = 'V' AND kategori = '$request' ORDER BY tgl_laporan DESC  ";
-
-    } elseif ($_COOKIE["username"] == "ig_sembako") {
-        $where = "team = 'VI' AND kategori = '$request' ORDER BY tgl_laporan DESC  ";
-
-    } elseif ($_COOKIE["username"] == "fb_pembanugunan") {
-        $where = "team = 'VII' AND kategori = '$request' ORDER BY tgl_laporan DESC  ";
-
-    } elseif ($_COOKIE["username"] == "ig_pembangunan") {
-        $where = "team = 'VIII' AND kategori = '$request' ORDER BY tgl_laporan DESC  ";
-    
-    } else {
-        $where = "team = 'IX' AND kategori = '$request' ORDER BY tgl_laporan DESC  ";
     }
     
 } else if ($_COOKIE["id_pengurus"] == "admin_web") {
@@ -193,15 +173,8 @@ $columns = array(
         'db' => 'team', 
         'dt' => 'lapTeam',
         'formatter' => function( $d, $row ) {
-            return $d == "I" ? "FB Uang Saku I" : 
-            ($d == "II" ? "FB Uang Saku II" : 
-            ($d == "III" ? "IG Uang Saku I" : 
-            ($d == "IV" ? "IG Uang Saku II" : 
-            ($d == "V" ? "FB Sembako" : 
-            ($d == "VI" ? "IG Sembako" : 
-            ($d == "VII" ? "FB Pembangunan" :
-            ($d == "VIII" ? "IG Pembangunan" : 
-            ($d == "IX" ? "FB Kesehatan" : "Tidak Ada"))))))));
+            return $d == "I" ? "Facebook" : 
+            ($d == "II" ? "Instagram" : "Tidak Ada");
         }
     ),
     

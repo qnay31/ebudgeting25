@@ -24,7 +24,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -75,10 +75,10 @@ $(document).ready(function () {
                 var newDate = `${year}${month}${day}`
                 var edit =
                     `
-                    <center>
+                    <div class="text-center">
                         <a href="#"" data-bs-toggle="modal" data-bs-target="#program${data["verEdit"]}"><i class="bi bi-pencil"></i></a> | 
                         <a href="" id="btnDelete${data["verEdit"]}"><i class="bi bi-trash"></i></a>
-                    </center>
+                    </div>
     
                     <!-- Modal -->
                     <div class="modal fade" id="program${data["verEdit"]}" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="modalLabel"    aria-hidden="true">
@@ -318,7 +318,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -363,10 +363,10 @@ $(document).ready(function () {
                 var newDate = `${year}${month}${day}`
                 var edit =
                     `
-                    <center>
+                    <div class="text-center">
                         <a href="#"" data-bs-toggle="modal" data-bs-target="#logistik${data["verEdit"]}"><i class="bi bi-pencil"></i></a> | 
                         <a href="" id="btnDelLogistik${data["verEdit"]}"><i class="bi bi-trash"></i></a>
-                    </center>
+                    </div>
     
                     <!-- Modal -->
                     <div class="modal fade" id="logistik${data["verEdit"]}" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="modalLabel"    aria-hidden="true">
@@ -599,7 +599,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -629,7 +629,7 @@ $(document).ready(function () {
             "targets": 5,
             data: "verQty",
             "render": function (data) {
-                return `${data == 0 ? `<center>-</center>`:`<center>${data} Pcs</center>`}`
+                return `${data == 0 ? `<div class="text-center">-</div>`:`<div class="text-center">${data} Pcs</center>`}`
             }
         }, {
             "targets": 6,
@@ -656,10 +656,10 @@ $(document).ready(function () {
                 var newDate = `${year}${month}${day}`
                 var edit =
                     `
-                    <center>
+                    <div class="text-center">
                         <a href="#"" data-bs-toggle="modal" data-bs-target="#aset${data["verEdit"]}"><i class="bi bi-pencil"></i></a> | 
                         <a href="" id="btnDelAset${data["verEdit"]}"><i class="bi bi-trash"></i></a>
-                    </center>
+                    </di>
     
                     <!-- Modal -->
                     <div class="modal fade" id="aset${data["verEdit"]}" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="modalLabel"    aria-hidden="true">
@@ -935,7 +935,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -980,10 +980,10 @@ $(document).ready(function () {
                 var newDate = `${year}${month}${day}`
                 var edit =
                     `
-                    <center>
+                    <div class="text-center">
                         <a href="#"" data-bs-toggle="modal" data-bs-target="#uangMakan${data["verEdit"]}"><i class="bi bi-pencil"></i></a> | 
                         <a href="" id="btnUangMakan${data["verEdit"]}"><i class="bi bi-trash"></i></a>
-                    </center>
+                    </div>
     
                     <!-- Modal -->
                     <div class="modal fade" id="uangMakan${data["verEdit"]}" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="modalLabel"    aria-hidden="true">
@@ -1215,7 +1215,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -1260,10 +1260,10 @@ $(document).ready(function () {
                 var newDate = `${year}${month}${day}`
                 var edit =
                     `
-                    <center>
+                    <div class="text-center">
                         <a href="#"" data-bs-toggle="modal" data-bs-target="#gaji${data["verEdit"]}"><i class="bi bi-pencil"></i></a> | 
                         <a href="" id="btnGaji${data["verEdit"]}"><i class="bi bi-trash"></i></a>
-                    </center>
+                    </div>
     
                     <!-- Modal -->
                     <div class="modal fade" id="gaji${data["verEdit"]}" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="modalLabel"    aria-hidden="true">
@@ -1495,7 +1495,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -1540,10 +1540,10 @@ $(document).ready(function () {
                 var newDate = `${year}${month}${day}`
                 var edit =
                     `
-                    <center>
+                    <div class="text-center">
                         <a href="#"" data-bs-toggle="modal" data-bs-target="#lainnya${data["verEdit"]}"><i class="bi bi-pencil"></i></a> | 
                         <a href="" id="btnLainnya${data["verEdit"]}"><i class="bi bi-trash"></i></a>
-                    </center>
+                    </div>
     
                     <!-- Modal -->
                     <div class="modal fade" id="lainnya${data["verEdit"]}" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="modalLabel"    aria-hidden="true">
@@ -1775,7 +1775,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -1820,10 +1820,10 @@ $(document).ready(function () {
                 var newDate = `${year}${month}${day}`
                 var edit =
                     `
-                    <center>
+                    <div class="text-center">
                         <a href="#"" data-bs-toggle="modal" data-bs-target="#maintenance${data["verEdit"]}"><i class="bi bi-pencil"></i></a> | 
                         <a href="" id="btnMaintenance${data["verEdit"]}"><i class="bi bi-trash"></i></a>
-                    </center>
+                    </div>
     
                     <!-- Modal -->
                     <div class="modal fade" id="maintenance${data["verEdit"]}" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="modalLabel"    aria-hidden="true">
@@ -2055,7 +2055,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -2100,10 +2100,10 @@ $(document).ready(function () {
                 var newDate = `${year}${month}${day}`
                 var edit =
                     `
-                    <center>
+                    <div class="text-center">
                         <a href="#"" data-bs-toggle="modal" data-bs-target="#operasional${data["verEdit"]}"><i class="bi bi-pencil"></i></a> | 
                         <a href="" id="btnOperasional${data["verEdit"]}"><i class="bi bi-trash"></i></a>
-                    </center>
+                    </div>
     
                     <!-- Modal -->
                     <div class="modal fade" id="operasional${data["verEdit"]}" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="modalLabel"    aria-hidden="true">
@@ -2332,7 +2332,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -2377,10 +2377,10 @@ $(document).ready(function () {
                 var newDate = `${year}${month}${day}`
                 var edit =
                     `
-                    <center>
+                    <div class="text-center">
                         <a href="#"" data-bs-toggle="modal" data-bs-target="#paud${data["verEdit"]}"><i class="bi bi-pencil"></i></a> | 
                         <a href="#" id="btnPaud${data["verEdit"]}"><i class="bi bi-trash"></i></a>
-                    </center>
+                    </div>
     
                     <!-- Modal -->
                     <div class="modal fade" id="paud${data["verEdit"]}" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="modalLabel"    aria-hidden="true">
@@ -2610,7 +2610,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -2655,10 +2655,10 @@ $(document).ready(function () {
                 var newDate = `${year}${month}${day}`
                 var edit =
                     `
-                    <center>
+                    <div class="text-center">
                         <a href="#"" data-bs-toggle="modal" data-bs-target="#jasa${data["verEdit"]}"><i class="bi bi-pencil"></i></a> | 
                         <a href="#" id="btnJasa${data["verEdit"]}"><i class="bi bi-trash"></i></a>
-                    </center>
+                    </div>
     
                     <!-- Modal -->
                     <div class="modal fade" id="jasa${data["verEdit"]}" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="modalLabel"    aria-hidden="true">
@@ -2985,7 +2985,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -3006,10 +3006,10 @@ $(document).ready(function () {
                 var newDate = `${year}${month}${day}`
                 var edit =
                     `
-                    <center>
+                    <div class="text-center">
                         <a href="#"" data-bs-toggle="modal" data-bs-target="#lapProgram${data["lapId"]}"><i class="bi bi-pencil"></i></a> | 
                         <a href="" id="btnLapDelete${data["lapId"]}"><i class="bi bi-trash"></i></a>
-                    </center>
+                    </div>
     
                     <!-- Modal -->
                     <div class="modal fade" id="lapProgram${data["lapId"]}" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="modalLabel"    aria-hidden="true">
@@ -3272,7 +3272,7 @@ $(document).ready(function () {
             "targets": 7,
             data: "anggaran",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 8,
@@ -3290,7 +3290,7 @@ $(document).ready(function () {
             "targets": 10,
             data: "terpakai",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 11,
@@ -3309,11 +3309,11 @@ $(document).ready(function () {
             data: "lapResi",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                             <a href="#" name="view" data-id="${data}" class="view_data_program${data}">
                                 <i class="bi bi-images"></i>
                             </a>
-                        </center>
+                        </di>
                     
                         <div id="dataModal_program${data}" class="modal fade">
                             <div class="modal-dialog">
@@ -3389,7 +3389,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -3410,10 +3410,10 @@ $(document).ready(function () {
                 var newDate = `${year}${month}${day}`
                 var edit =
                     `
-                    <center>
+                    <div class="text-center">
                         <a href="#"" data-bs-toggle="modal" data-bs-target="#lapLogistik${data["lapId"]}"><i class="bi bi-pencil"></i></a> | 
                         <a href="" id="btnLapDeleteLogistik${data["lapId"]}"><i class="bi bi-trash"></i></a>
-                    </center>
+                    </div>
     
                     <!-- Modal -->
                     <div class="modal fade" id="lapLogistik${data["lapId"]}" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="modalLabel"    aria-hidden="true">
@@ -3663,7 +3663,7 @@ $(document).ready(function () {
             "targets": 6,
             data: "anggaran",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 7,
@@ -3681,7 +3681,7 @@ $(document).ready(function () {
             "targets": 9,
             data: "terpakai",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 10,
@@ -3700,11 +3700,11 @@ $(document).ready(function () {
             data: "lapResi",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                             <a href="#" name="view" data-id="${data}" class="view_data_logistik${data}">
                                 <i class="bi bi-images"></i>
                             </a>
-                        </center>
+                        </div>
                     
                         <div id="dataModal_logistik${data}" class="modal fade">
                             <div class="modal-dialog">
@@ -3780,7 +3780,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -3801,10 +3801,10 @@ $(document).ready(function () {
                 var newDate = `${year}${month}${day}`
                 var edit =
                     `
-                    <center>
+                    <div class="text-center">
                         <a href="#"" data-bs-toggle="modal" data-bs-target="#lapAset${data["lapId"]}"><i class="bi bi-pencil"></i></a> | 
                         <a href="" id="btnLapDeleteAset${data["lapId"]}"><i class="bi bi-trash"></i></a>
-                    </center>
+                    </div>
     
                     <!-- Modal -->
                     <div class="modal fade" id="lapAset${data["lapId"]}" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="modalLabel"    aria-hidden="true">
@@ -4103,7 +4103,7 @@ $(document).ready(function () {
             "targets": 6,
             data: "lapQtyAnggaran",
             "render": function (data) {
-                return data == 0 ? `<center>-</center>` : `<center>${new Intl.NumberFormat('en-US').format(data)} Pcs</center>`;
+                return data == 0 ? `<div class="text-center">-</div>` : `<div class="text-center">${new Intl.NumberFormat('en-US').format(data)} Pcs</div>`;
             }
         }, {
             "targets": 7,
@@ -4115,7 +4115,7 @@ $(document).ready(function () {
             "targets": 8,
             data: "anggaran",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 9,
@@ -4127,7 +4127,7 @@ $(document).ready(function () {
             "targets": 10,
             data: "lapQtyTerpakai",
             "render": function (data) {
-                return data == 0 || data == null ? `<center>-</center>` : `<center>${new Intl.NumberFormat('en-US').format(data)} Pcs</center>`;
+                return data == 0 || data == null ? `<div class="text-center">-</div>` : `<div class="text-center">${new Intl.NumberFormat('en-US').format(data)} Pcs</div>`;
             }
         }, {
             "targets": 11,
@@ -4139,7 +4139,7 @@ $(document).ready(function () {
             "targets": 12,
             data: "terpakai",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 13,
@@ -4158,11 +4158,11 @@ $(document).ready(function () {
             data: "lapResi",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                             <a href="#" name="view" data-id="${data}" class="view_data_aset${data}">
                                 <i class="bi bi-images"></i>
                             </a>
-                        </center>
+                        </div>
                     
                         <div id="dataModal_aset${data}" class="modal fade">
                             <div class="modal-dialog">
@@ -4238,7 +4238,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -4259,10 +4259,10 @@ $(document).ready(function () {
                 var newDate = `${year}${month}${day}`
                 var edit =
                     `
-                    <center>
+                    <div class="text-center">
                         <a href="#"" data-bs-toggle="modal" data-bs-target="#lapUangMakan${data["lapId"]}"><i class="bi bi-pencil"></i></a> | 
                         <a href="" id="btnLapDeleteUangMakan${data["lapId"]}"><i class="bi bi-trash"></i></a>
-                    </center>
+                    </div>
     
                     <!-- Modal -->
                     <div class="modal fade" id="lapUangMakan${data["lapId"]}" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="modalLabel"    aria-hidden="true">
@@ -4512,7 +4512,7 @@ $(document).ready(function () {
             "targets": 6,
             data: "anggaran",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 7,
@@ -4530,7 +4530,7 @@ $(document).ready(function () {
             "targets": 9,
             data: "terpakai",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 10,
@@ -4549,11 +4549,11 @@ $(document).ready(function () {
             data: "lapResi",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                             <a href="#" name="view" data-id="${data}" class="view_data_uangMakan${data}">
                                 <i class="bi bi-images"></i>
                             </a>
-                        </center>
+                        </div>
                     
                         <div id="dataModal_uangMakan${data}" class="modal fade">
                             <div class="modal-dialog">
@@ -4629,7 +4629,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -4650,10 +4650,10 @@ $(document).ready(function () {
                 var newDate = `${year}${month}${day}`
                 var edit =
                     `
-                    <center>
+                    <div class="text-center">
                         <a href="#"" data-bs-toggle="modal" data-bs-target="#lapGaji${data["lapId"]}"><i class="bi bi-pencil"></i></a> | 
                         <a href="" id="btnLapDeleteGaji${data["lapId"]}"><i class="bi bi-trash"></i></a>
-                    </center>
+                    </di>
     
                     <!-- Modal -->
                     <div class="modal fade" id="lapGaji${data["lapId"]}" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="modalLabel"    aria-hidden="true">
@@ -4903,7 +4903,7 @@ $(document).ready(function () {
             "targets": 6,
             data: "anggaran",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 7,
@@ -4921,7 +4921,7 @@ $(document).ready(function () {
             "targets": 9,
             data: "terpakai",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 10,
@@ -4940,11 +4940,11 @@ $(document).ready(function () {
             data: "lapResi",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                             <a href="#" name="view" data-id="${data}" class="view_data_gaji${data}">
                                 <i class="bi bi-images"></i>
                             </a>
-                        </center>
+                        </div>
                     
                         <div id="dataModal_gaji${data}" class="modal fade">
                             <div class="modal-dialog">
@@ -5020,7 +5020,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -5041,10 +5041,10 @@ $(document).ready(function () {
                 var newDate = `${year}${month}${day}`
                 var edit =
                     `
-                    <center>
+                    <div class="text-center">
                         <a href="#"" data-bs-toggle="modal" data-bs-target="#lapLainnya${data["lapId"]}"><i class="bi bi-pencil"></i></a> | 
                         <a href="" id="btnLapDeleteLainnya${data["lapId"]}"><i class="bi bi-trash"></i></a>
-                    </center>
+                    </div>
     
                     <!-- Modal -->
                     <div class="modal fade" id="lapLainnya${data["lapId"]}" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="modalLabel"    aria-hidden="true">
@@ -5294,7 +5294,7 @@ $(document).ready(function () {
             "targets": 6,
             data: "anggaran",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 7,
@@ -5312,7 +5312,7 @@ $(document).ready(function () {
             "targets": 9,
             data: "terpakai",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 10,
@@ -5331,11 +5331,11 @@ $(document).ready(function () {
             data: "lapResi",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                             <a href="#" name="view" data-id="${data}" class="view_data_lainnya${data}">
                                 <i class="bi bi-images"></i>
                             </a>
-                        </center>
+                        </div>
                     
                         <div id="dataModal_lainnya${data}" class="modal fade">
                             <div class="modal-dialog">
@@ -5411,7 +5411,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -5432,10 +5432,10 @@ $(document).ready(function () {
                 var newDate = `${year}${month}${day}`
                 var edit =
                     `
-                    <center>
+                    <div class="text-center">
                         <a href="#"" data-bs-toggle="modal" data-bs-target="#lapMaintenance${data["lapId"]}"><i class="bi bi-pencil"></i></a> | 
                         <a href="" id="btnLapDeleteMaintenance${data["lapId"]}"><i class="bi bi-trash"></i></a>
-                    </center>
+                    </div>
     
                     <!-- Modal -->
                     <div class="modal fade" id="lapMaintenance${data["lapId"]}" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="modalLabel"    aria-hidden="true">
@@ -5685,7 +5685,7 @@ $(document).ready(function () {
             "targets": 6,
             data: "anggaran",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 7,
@@ -5703,7 +5703,7 @@ $(document).ready(function () {
             "targets": 9,
             data: "terpakai",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 10,
@@ -5722,11 +5722,11 @@ $(document).ready(function () {
             data: "lapResi",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                             <a href="#" name="view" data-id="${data}" class="view_data_maintenance${data}">
                                 <i class="bi bi-images"></i>
                             </a>
-                        </center>
+                        </div>
                     
                         <div id="dataModal_maintenance${data}" class="modal fade">
                             <div class="modal-dialog">
@@ -5802,7 +5802,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -5823,10 +5823,10 @@ $(document).ready(function () {
                 var newDate = `${year}${month}${day}`
                 var edit =
                     `
-                    <center>
+                    <div class="text-center">
                         <a href="#"" data-bs-toggle="modal" data-bs-target="#lapOperasional${data["lapId"]}"><i class="bi bi-pencil"></i></a> | 
                         <a href="" id="btnLapDeleteOperasional${data["lapId"]}"><i class="bi bi-trash"></i></a>
-                    </center>
+                    </div>
     
                     <!-- Modal -->
                     <div class="modal fade" id="lapOperasional${data["lapId"]}" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="modalLabel"    aria-hidden="true">
@@ -6076,7 +6076,7 @@ $(document).ready(function () {
             "targets": 6,
             data: "anggaran",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 7,
@@ -6094,7 +6094,7 @@ $(document).ready(function () {
             "targets": 9,
             data: "terpakai",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 10,
@@ -6113,11 +6113,11 @@ $(document).ready(function () {
             data: "lapResi",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                             <a href="#" name="view" data-id="${data}" class="view_data_operasional${data}">
                                 <i class="bi bi-images"></i>
                             </a>
-                        </center>
+                        </div>
                     
                         <div id="dataModal_operasional${data}" class="modal fade">
                             <div class="modal-dialog">
@@ -6193,7 +6193,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -6214,10 +6214,10 @@ $(document).ready(function () {
                 var newDate = `${year}${month}${day}`
                 var edit =
                     `
-                    <center>
+                    <div class="text-center">
                         <a href="#"" data-bs-toggle="modal" data-bs-target="#lapJasa${data["lapId"]}"><i class="bi bi-pencil"></i></a> | 
                         <a href="" id="btnLapDeleteJasa${data["lapId"]}"><i class="bi bi-trash"></i></a>
-                    </center>
+                    </div>
     
                     <!-- Modal -->
                     <div class="modal fade" id="lapJasa${data["lapId"]}" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="modalLabel"    aria-hidden="true">
@@ -6467,7 +6467,7 @@ $(document).ready(function () {
             "targets": 6,
             data: "anggaran",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 7,
@@ -6485,7 +6485,7 @@ $(document).ready(function () {
             "targets": 9,
             data: "terpakai",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 10,
@@ -6504,11 +6504,11 @@ $(document).ready(function () {
             data: "lapResi",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                             <a href="#" name="view" data-id="${data}" class="view_data_jasa${data}">
                                 <i class="bi bi-images"></i>
                             </a>
-                        </center>
+                        </div>
                     
                         <div id="dataModal_jasa${data}" class="modal fade">
                             <div class="modal-dialog">
@@ -6584,7 +6584,7 @@ $(document).ready(function () {
             "targets": 0,
             "render": function (_data, _type, _row, meta) {
                 var no = meta.row + meta.settings._iDisplayStart + 1
-                return "<center>" + no + "</center>";
+                return `<div class="text-center">` + no + `</div>`
             }
         }, {
             "targets": 1,
@@ -6605,10 +6605,10 @@ $(document).ready(function () {
                 var newDate = `${year}${month}${day}`
                 var edit =
                     `
-                    <center>
+                    <div class="text-center">
                         <a href="#"" data-bs-toggle="modal" data-bs-target="#lapPaud${data["lapId"]}"><i class="bi bi-pencil"></i></a> | 
                         <a href="" id="btnLapDeletePaud${data["lapId"]}"><i class="bi bi-trash"></i></a>
-                    </center>
+                    </div>
     
                     <!-- Modal -->
                     <div class="modal fade" id="lapPaud${data["lapId"]}" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="modalLabel"    aria-hidden="true">
@@ -6858,7 +6858,7 @@ $(document).ready(function () {
             "targets": 6,
             data: "anggaran",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 7,
@@ -6876,7 +6876,7 @@ $(document).ready(function () {
             "targets": 9,
             data: "terpakai",
             "render": function (data) {
-                return data == "" ? `<center>-</center>` : new Intl.NumberFormat('en-US').format(data);
+                return data == "" ? `<div class="text-center">-</div>` : new Intl.NumberFormat('en-US').format(data);
             }
         }, {
             "targets": 10,
@@ -6895,11 +6895,11 @@ $(document).ready(function () {
             data: "lapResi",
             "render": function (data) {
                 var image =
-                    `<center>
+                    `<div class="text-center">
                             <a href="#" name="view" data-id="${data}" class="view_data_paud${data}">
                                 <i class="bi bi-images"></i>
                             </a>
-                        </center>
+                        </div>
                     
                         <div id="dataModal_paud${data}" class="modal fade">
                             <div class="modal-dialog">

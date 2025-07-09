@@ -98,7 +98,7 @@
                             <tr>
                                 <td>
                                     <b>
-                                        <center>Total Keseluruhan</center>
+                                        <div class="text-center">Total Keseluruhan</div>
                                     </b>
                                 </td>
                                 <td class="stat-cell totalListAnggaran"></td>
@@ -181,7 +181,7 @@
                             <tr>
                                 <td>
                                     <b>
-                                        <center>Total Keseluruhan</center>
+                                        <div class="text-center">Total Keseluruhan</div>
                                     </b>
                                 </td>
                                 <td class="stat-cell programListAnggaran"></td>

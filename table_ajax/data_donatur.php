@@ -11,50 +11,13 @@ $primaryKey = 'id';
 if ($_COOKIE["id_pengurus"] == "sosial_media") {
     $where = "nomor_id = '$dataLog[id]' AND status = 'OK' ";
     
-} else {
-    if ($_COOKIE["id_pengurus"] == "manager_facebook") {
-        if ($_COOKIE["username"] == "ig_saku1") {
-            $where = "kategori = 'Instagram' AND team = 'III' AND status = 'OK' ";
+} else if ($_COOKIE["id_pengurus"] == "manager_facebook") {
+        $where = "kategori = 'Facebook' AND team = 'I' AND status = 'OK' ";
+
+} else {   
+        $where = "kategori = 'Instagram' AND team = 'II' AND status = 'OK' ";
+} 
         
-        } else if ($_COOKIE["username"] == "ig_saku2") {
-            $where = "kategori = 'Instagram' AND team = 'IV' AND status = 'OK' ";
-
-        } else if ($_COOKIE["username"] == "ig_sembako") {
-            $where = "kategori = 'Instagram' AND team = 'VI' AND status = 'OK' ";
-
-        } else if ($_COOKIE["username"] == "ig_pembangunan") {
-            $where = "kategori = 'Instagram' AND team = 'VIII' AND status = 'OK' ";
-            
-        } else if ($_COOKIE["username"] == "manager_ig") {
-            $where = "kategori = 'Instagram' AND team LIKE 'III' OR team LIKE 'VI' OR team LIKE 'VIII' AND status = 'OK' ";
-
-        } else {
-            if ($_COOKIE["username"] == "fb_saku1") {
-                $where = "kategori = 'Facebook' AND team = 'I' AND status = 'OK' ";
-            
-            } elseif ($_COOKIE["username"] == "fb_saku2") {
-                $where = "kategori = 'Facebook' AND team = 'II' AND status = 'OK' ";
-
-            } elseif ($_COOKIE["username"] == "fb_sembako") {
-                $where = "kategori = 'Facebook' AND team = 'V' AND status = 'OK' ";
-
-            } elseif ($_COOKIE["username"] == "fb_pembangunan") {
-                $where = "kategori = 'Facebook' AND team = 'VII' AND status = 'OK' ";
-            
-            } elseif ($_COOKIE["username"] == "fb_kesehatan") {
-                $where = "kategori = 'Facebook' AND team = 'IX' AND status = 'OK' ";
-            
-            } else if ($_COOKIE["username"] == "manager_fb") {
-                $where = "kategori = 'Facebook' AND team LIKE 'I' OR team LIKE 'VII' OR team LIKE 'IX' AND status = 'OK' ";
-            }
-        }
-        
-    } else {
-        $where = "status = 'OK' ";
-    }
-    
-}
-
 // Table colums 
 $columns = array(
     array(

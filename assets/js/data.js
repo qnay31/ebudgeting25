@@ -451,28 +451,18 @@ window.addEventListener("load", function () {
                     // list pemasukan
                     document.querySelector(".dataGlobal2023 .teamI").innerHTML = IncomeTeamI
                     document.querySelector(".dataGlobal2023 .teamII").innerHTML = IncomeTeamII
-                    document.querySelector(".dataGlobal2023 .teamIII").innerHTML = IncomeTeamIII
-                    document.querySelector(".dataGlobal2023 .teamIV").innerHTML = IncomeTeamIV
-                    document.querySelector(".dataGlobal2023 .teamIG").innerHTML = IncomeTeamVI
-                    document.querySelector(".dataGlobal2023 .teamIGII").innerHTML = IncomeTeamV
                     document.querySelector(".dataGlobal2023 .iResi").innerHTML = incomeNonResi
                     document.querySelector(".dataGlobal2023 .totalPemasukan").innerHTML = `<b>${IncomeGlobal}</b>`
                 }
             } else if (
                 readCookie("id_pengurus") == "kepala_income" ||
-                readCookie("id_pengurus") == "manager_facebook"
+                readCookie("id_pengurus") == "manager_facebook" ||
+                readCookie("id_pengurus") == "manager_instagram"
             ) {
                 // pemasukan //
                 let incomeMedia = new Intl.NumberFormat('en-US').format(data.pemasukan.media)
                 let IncomeTeamI = new Intl.NumberFormat('en-US').format(data.pemasukan.teamI)
                 let IncomeTeamII = new Intl.NumberFormat('en-US').format(data.pemasukan.teamII)
-                let IncomeTeamIII = new Intl.NumberFormat('en-US').format(data.pemasukan.teamIII)
-                // let IncomeTeamIV = new Intl.NumberFormat('en-US').format(data.pemasukan.teamIV)
-                let IncomeTeamV = new Intl.NumberFormat('en-US').format(data.pemasukan.teamV)
-                let IncomeTeamVI = new Intl.NumberFormat('en-US').format(data.pemasukan.teamVI)
-                let IncomeTeamVII = new Intl.NumberFormat('en-US').format(data.pemasukan.teamVII)
-                let IncomeTeamVIII = new Intl.NumberFormat('en-US').format(data.pemasukan.teamVIII)
-                let IncomeTeamIX = new Intl.NumberFormat('en-US').format(data.pemasukan.teamIX)
                 let incomeNonResi = new Intl.NumberFormat('en-US').format(data.pemasukan.nonResi)
                 let IncomeGlobal = new Intl.NumberFormat('en-US').format(data.pemasukan.totalPemasukan)
 
@@ -482,13 +472,6 @@ window.addEventListener("load", function () {
                 // list pemasukan
                 document.querySelector(".dataGlobal2023 .teamI").innerHTML = IncomeTeamI
                 document.querySelector(".dataGlobal2023 .teamII").innerHTML = IncomeTeamII
-                document.querySelector(".dataGlobal2023 .teamIII").innerHTML = IncomeTeamIII
-                // document.querySelector(".dataGlobal2023 .teamIV").innerHTML = IncomeTeamIV
-                document.querySelector(".dataGlobal2023 .teamIG").innerHTML = IncomeTeamV
-                document.querySelector(".dataGlobal2023 .teamIGII").innerHTML = IncomeTeamVI
-                document.querySelector(".dataGlobal2023 .teamIGIII").innerHTML = IncomeTeamVII
-                document.querySelector(".dataGlobal2023 .teamIGIV").innerHTML = IncomeTeamVIII
-                document.querySelector(".dataGlobal2023 .teamFBKI").innerHTML = IncomeTeamIX
                 document.querySelector(".dataGlobal2023 .iResi").innerHTML = incomeNonResi
                 document.querySelector(".dataGlobal2023 .totalPemasukan").innerHTML = `<b>${IncomeGlobal}</b>`
             } else if (readCookie("id_pengurus") == "sosial_media") {
@@ -1208,7 +1191,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -1416,7 +1399,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -1617,7 +1600,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -1641,7 +1624,7 @@ $(document).ready(function () {
                 "targets": 4,
                 data: "lapQtyAnggaran",
                 "render": function (data) {
-                    return `${data == 0 ? `<center>-</center>`:`<center>${data} Pcs</center>`}`;
+                    return `${data == 0 ? `<div class="text-center">-</div>`:`<div class="text-center">${data} Pcs</div>`}`;
                 }
             }, {
                 "targets": 5,
@@ -1671,7 +1654,7 @@ $(document).ready(function () {
                 "targets": 9,
                 data: "lapQtyTerpakai",
                 "render": function (data) {
-                    return `${data == 0 ? `<center>-</center>`:`<center>${data} Pcs</center>`}`;
+                    return `${data == 0 ? `<div class="text-center">-</div>`:`<div class="text-center">${data} Pcs</div>`}`;
                 }
             }, {
                 "targets": 10,
@@ -1836,7 +1819,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -2037,7 +2020,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -2238,7 +2221,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -2439,7 +2422,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -2640,7 +2623,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -2841,7 +2824,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -3042,7 +3025,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -3244,7 +3227,7 @@ $(document).ready(function () {
                     "targets": 0,
                     "render": function (_data, _type, _row, meta) {
                         var no = meta.row + meta.settings._iDisplayStart + 1
-                        return "<center>" + no + "</center>";
+                        return `<div class="text-center">` + no + `</div>`
                     }
                 }, {
                     "targets": 1,
@@ -3372,7 +3355,7 @@ $(document).ready(function () {
                     "targets": 0,
                     "render": function (_data, _type, _row, meta) {
                         var no = meta.row + meta.settings._iDisplayStart + 1
-                        return "<center>" + no + "</center>";
+                        return `<div class="text-center">` + no + `</div>`
                     }
                 }, {
                     "targets": 1,
@@ -3499,7 +3482,7 @@ $(document).ready(function () {
                     "targets": 0,
                     "render": function (_data, _type, _row, meta) {
                         var no = meta.row + meta.settings._iDisplayStart + 1
-                        return "<center>" + no + "</center>";
+                        return `<div class="text-center">` + no + `</div>`
                     }
                 }, {
                     "targets": 1,
@@ -3622,7 +3605,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -3747,7 +3730,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -3870,7 +3853,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -3986,7 +3969,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -4193,7 +4176,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -4394,7 +4377,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -4418,7 +4401,7 @@ $(document).ready(function () {
                 "targets": 4,
                 data: "lapQtyAnggaran",
                 "render": function (data) {
-                    return `${data == 0 ? `<center>-</center>`:`<center>${data} Pcs</center>`}`;
+                    return `${data == 0 ? `<div class="text-center">-</div>`:`<div class="text-center">${data} Pcs</div>`}`;
                 }
             }, {
                 "targets": 5,
@@ -4448,7 +4431,7 @@ $(document).ready(function () {
                 "targets": 9,
                 data: "lapQtyTerpakai",
                 "render": function (data) {
-                    return `${data == 0 ? `<center>-</center>`:`<center>${data} Pcs</center>`}`;
+                    return `${data == 0 ? `<div class="text-center">-</div>`:`<div class="text-center">${data} Pcs</div>`}`;
                 }
             }, {
                 "targets": 10,
@@ -4613,7 +4596,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -4814,7 +4797,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -5015,7 +4998,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -5216,7 +5199,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -5417,7 +5400,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -5618,7 +5601,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -5819,7 +5802,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -6024,7 +6007,7 @@ $(document).ready(function () {
                     "targets": 0,
                     "render": function (_data, _type, _row, meta) {
                         var no = meta.row + meta.settings._iDisplayStart + 1
-                        return "<center>" + no + "</center>";
+                        return `<div class="text-center">` + no + `</div>`
                     }
                 }, {
                     "targets": 1,
@@ -6036,13 +6019,13 @@ $(document).ready(function () {
                     "targets": 2,
                     data: "lapGedung",
                     "render": function (data) {
-                        return `<center>${data}</center>`;
+                        return `<div class="text-center">${data}</div>`;
                     }
                 }, {
                     "targets": 3,
                     data: "lapTanggal",
                     "render": function (data) {
-                        return `<center>${data}</center>`;
+                        return `<div class="text-center">${data}</div>`;
                     }
                 }, {
                     "targets": 4,
@@ -6151,7 +6134,7 @@ $(document).ready(function () {
                     "targets": 0,
                     "render": function (_data, _type, _row, meta) {
                         var no = meta.row + meta.settings._iDisplayStart + 1
-                        return "<center>" + no + "</center>";
+                        return `<div class="text-center">` + no + `</div>`
                     }
                 }, {
                     "targets": 1,
@@ -6277,7 +6260,7 @@ $(document).ready(function () {
                     "targets": 0,
                     "render": function (_data, _type, _row, meta) {
                         var no = meta.row + meta.settings._iDisplayStart + 1
-                        return "<center>" + no + "</center>";
+                        return `<div class="text-center">` + no + `</div>`
                     }
                 }, {
                     "targets": 1,
@@ -6400,7 +6383,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -6412,13 +6395,13 @@ $(document).ready(function () {
                 "targets": 2,
                 data: "lapGedung",
                 "render": function (data) {
-                    return `<center>${data}</center>`;
+                    return `<div class="text-center">${data}</div>`;
                 }
             }, {
                 "targets": 3,
                 data: "lapTanggal",
                 "render": function (data) {
-                    return `<center>${data}</center>`;
+                    return `<div class="text-center">${data}</div>`;
                 }
             }, {
                 "targets": 4,
@@ -6525,7 +6508,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,
@@ -6648,7 +6631,7 @@ $(document).ready(function () {
                 "targets": 0,
                 "render": function (_data, _type, _row, meta) {
                     var no = meta.row + meta.settings._iDisplayStart + 1
-                    return "<center>" + no + "</center>";
+                    return `<div class="text-center">` + no + `</div>`
                 }
             }, {
                 "targets": 1,

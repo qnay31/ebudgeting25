@@ -47,7 +47,7 @@
         '$posisi', 
         '$ip', 
         '$date', 
-        '{$fullName} Telah Membuat Akun Baru {$posisi}')
+        '$fullName Telah Membuat Akun Baru $posisi')
     ");
 
     if ($result) {

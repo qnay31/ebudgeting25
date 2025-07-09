@@ -9,39 +9,10 @@ $primaryKey = 'id';
 
 // Table where
 if($_COOKIE["id_pengurus"] == "manager_facebook") {
-    if ($_COOKIE["username"] == "fb_saku1") {
-        $where = "team = 'I' AND status = 'OK' ORDER BY pemegang ASC, `tanggal_tf` DESC ";
+    $where = "team = 'I' AND status = 'OK' ORDER BY pemegang ASC, `tanggal_tf` DESC ";
     
-    } elseif ($_COOKIE["username"] == "fb_saku2") {
-        $where = "team = 'II' AND status = 'OK' ORDER BY pemegang ASC, `tanggal_tf` DESC ";
-    
-    } elseif ($_COOKIE["username"] == "ig_saku1") {
-        $where = "team = 'III' AND status = 'OK' ORDER BY pemegang ASC, `tanggal_tf` DESC ";
-    
-    } elseif ($_COOKIE["username"] == "ig_saku2") {
-        $where = "team = 'IV' AND status = 'OK' ORDER BY pemegang ASC, `tanggal_tf` DESC ";
-    
-    } elseif ($_COOKIE["username"] == "fb_sembako") {
-        $where = "team = 'V' AND status = 'OK' ORDER BY pemegang ASC, `tanggal_tf` DESC ";
-
-    } elseif ($_COOKIE["username"] == "ig_sembako") {
-        $where = "team = 'VI' AND status = 'OK' ORDER BY pemegang ASC, `tanggal_tf` DESC ";
-
-    } elseif ($_COOKIE["username"] == "fb_pembangunan") {
-        $where = "team = 'VII' AND status = 'OK' ORDER BY pemegang ASC, `tanggal_tf` DESC ";
-
-    } elseif ($_COOKIE["username"] == "ig_pembangunan") {
-        $where = "team = 'VIII' AND status = 'OK' ORDER BY pemegang ASC, `tanggal_tf` DESC ";
-
-    } elseif ($_COOKIE["username"] == "manager_fb") {
-        $where = "team LIKE 'I' OR team LIKE 'VII' OR team LIKE 'IX' AND status = 'OK' ORDER BY pemegang ASC, `tanggal_tf` DESC ";
-
-    } elseif ($_COOKIE["username"] == "manager_ig") {
-        $where = "team LIKE 'III' OR team LIKE 'VI' OR team LIKE 'VIII' AND status = 'OK' ORDER BY pemegang ASC, `tanggal_tf` DESC ";
-    
-    } else {
-        $where = "team = 'IX' AND status = 'OK' ORDER BY pemegang ASC, `tanggal_tf` DESC ";
-    }
+} else if ($_COOKIE["id_pengurus"] == "manager_instagram") {
+    $where = "team = 'II' AND status = 'OK' ORDER BY pemegang ASC, `tanggal_tf` DESC ";
 
 } else {
     $where = "status = 'OK' ORDER BY pemegang ASC, `tanggal_tf` DESC ";
@@ -89,15 +60,8 @@ $columns = array(
         'db' => 'team', 
         'dt' => "suksesTeam",
         'formatter' => function( $d, $row ) {
-            return $d == "I" ? "FB Uang Saku I" : 
-            ($d == "II" ? "FB Uang Saku II" : 
-            ($d == "III" ? "IG Uang Saku I" : 
-            ($d == "IV" ? "IG Uang Saku II" : 
-            ($d == "V" ? "FB Sembako" : 
-            ($d == "VI" ? "IG Sembako" : 
-            ($d == "VII" ? "FB Pembangunan" :
-            ($d == "VIII" ? "IG Pembangunan" : 
-            ($d == "IX" ? "FB Kesehatan" : "Tidak Ada"))))))));
+            return $d == "I" ? "Facebook" : 
+            ($d == "II" ? "Instagram" : "Tidak Ada");
         }
     ),
     array( 'db' => 'kategori', 'dt' => "suksesKategori")

@@ -2038,6 +2038,7 @@ if (
 								}
 								$('.akunNew').load("pages/input/input_list/tampil_akun.php");
 								$('.list-account').load("pages/input/input_list/list_akun.php");
+								$('.teamAdminMediaSosial').load("pages/input/input_list/tampil_team.php");
 								$(".formDeleteNameAccount").toggle(500);
 							}
 						})

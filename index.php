@@ -65,33 +65,33 @@ if (isset($_COOKIE["username"])) {
                     <div class="auth-form-container text-start">
                         <form class="auth-form login-form">
                             <div class="email mb-3 ">
-                                <label class="sr-only" for="signin-email">Username</label>
+                                <label class="sr-only" for="username">Username</label>
                                 <input id="username" name="username" type="text" class="form-control signin-email"
-                                    placeholder="Username" />
+                                    placeholder="Username" autocomplete="username" />
                                 <p class="alertUsername text-danger"></p>
                             </div>
                             <!--//form-group-->
                             <div class="password mb-3">
-                                <label for="basic-url" toggle="#password-field"
-                                    class="show-password toggle-password"><span class="showMe">Tampilkan</span>
+                                <span toggle="#password-field" class="show-password toggle-password"><span
+                                        class="showMe">Tampilkan</span>
                                     Password</label>
-                                <label class="sr-only" for="password-field">Password</label>
-                                <input type="password" class="form-control" name="password" id="password-field"
-                                    placeholder="Password" aria-label="Password" aria-describedby="basic-addon1"
-                                    autocomplete="off">
-                                <p class="alertPassword text-danger"></p>
-                                <div class="extra mt-3 row justify-content-between">
-                                    <div class="col-6">
-                                    </div>
-                                    <!--//col-6-->
-                                    <div class="col-6">
-                                        <div class="forgot-password text-end">
-                                            <a href="reset-password">Lupa Sandi?</a>
+                                    <label class="sr-only" for="password-field">Password</label>
+                                    <input type="password" class="form-control" name="password" id="password-field"
+                                        placeholder="Password" aria-label="Password" aria-describedby="basic-addon1"
+                                        autocomplete="off">
+                                    <p class="alertPassword text-danger"></p>
+                                    <div class="extra mt-3 row justify-content-between">
+                                        <div class="col-6">
                                         </div>
+                                        <!--//col-6-->
+                                        <div class="col-6">
+                                            <div class="forgot-password text-end">
+                                                <a href="reset-password">Lupa Sandi?</a>
+                                            </div>
+                                        </div>
+                                        <!--//col-6-->
                                     </div>
-                                    <!--//col-6-->
-                                </div>
-                                <!--//extra-->
+                                    <!--//extra-->
                             </div>
                             <!--//form-group-->
                             <div class="text-center btn-submit">

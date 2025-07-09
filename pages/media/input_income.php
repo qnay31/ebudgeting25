@@ -11,6 +11,7 @@ if ($dataLog['id_pengurus'] == "kepala_income") {
     $transfer       = str_replace(' ', '', $tf);
     $ip             = get_client_ip();
     $date           = date("Y-m-d H:i:s");
+    $caption        = 'tanpa resi';
 
     $qNonResi   = mysqli_query($conn, "SELECT * FROM input_incometanparesi WHERE tgl_pemasukan = '$tanggalName'");
     if (mysqli_fetch_assoc($qNonResi)) {
@@ -46,6 +47,7 @@ if ($dataLog['id_pengurus'] == "kepala_income") {
     $kategori       = $data_team["kategori"];
     $ip             = get_client_ip();
     $date           = date("Y-m-d H:i:s");
+    $caption        = 'media sosial';
 
     $valid_extensions = array('jpeg', 'jpg', 'png'); // valid extensions
     $path   = '../../assets/images/resi/'; // upload directory
@@ -126,7 +128,7 @@ $sql = mysqli_query($conn,
         '{$dataLog[posisi]}', 
         '$ip', 
         '$date', 
-        '$pemegang Bagian {$dataLog[posisi]} Telah Menginput income media sosial tanggal $tanggal')
+        '{$dataLog[nama]} Bagian {$dataLog[posisi]} Telah Menginput income $caption tanggal $tanggal')
     ");
 
 
